@@ -1,0 +1,8 @@
+timestamp,colour,Component,Reason for alarm,Nature,Sensor type,range,Alarm type
+12:20:25,red,Station 1,pump malfunction,Sudden increase in pressure,Pressure,60 -90,Critical
+12:20:30,orange,Valve 1,high pressure,Gradual Increase,Pressure,,Alert
+12:30:35,red,Station 1,Pump Malfunction,,,,Critical
+12:40:45,orange,Tank,low tank level,Deecrease in input pressure,Flow,< 1.2,Alert
+3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Fow,>300,Critical (Corelated)
+3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Pump,>240 Voltage,Critical (Corelated)
+3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Pressure,> 90,Critical (Corelated)
