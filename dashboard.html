@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TEAM_ROCKET</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Modern+Antiqua" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{{ url_for('static', filename='css/mdb.min.css')}}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{{ url_for('static', filename='css/style.min.css')}}" rel="stylesheet">
+</head>
+<style>
+  @media (max-width: 400px) {
+    #navbar-example2{
+      margin-top: 20px;
+    }
+}
+  </style>
+
+<body>
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav id="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-dark default-color  scrolling-navbar" >
+            <div class="container">    
+        <a class="navbar-brand" href="#">Choose a parameter:</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="#flow">Flow</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pressure">Pressure</a>
+              </li>
+              
+            </ul>
+            </div>
+          </nav>
+
+    </header>
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+    
+          <!-- Heading -->
+          <div class="card mb-4 wow fadeIn">
+    
+            <!--Card content-->
+            <div class="card-body d-sm-flex justify-content-between">
+    
+              <h4 class="mb-2 mb-sm-0 pt-1">
+                
+                
+                <span>Dashboard</span>
+              </h4>
+    
+            </div>
+    
+          </div>
+          <!-- Heading -->
+    
+          <!--Grid row-->
+          <div data-spy="scroll" data-target="#flow" class="scrollspy-example z-depth-1 mt-4" data-offset="0">
+                          
+            <h2 style=" font-weight: 700;" id="flow">Flow trends of individual stations:</h2>
+          <div class="row wow fadeIn">
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="card" height="400">
+    
+                            <!-- Card header -->
+                            <div class="card-header" >Output flow trend for station 1:</div>
+                
+                            <!--Card content-->
+                            <div class="card-body" id="graph-container" >
+
+				  
+                 
+                              <canvas id="lineChart1" ></canvas>
+                
+                            </div>
+                
+                          </div>
+                      </div>
+          
+          <div class="col-lg-6 col-md-6 mb-4" width="400" height="600">
+    
+            <!--Card-->
+            <div class="card  mb-4" width="400" height="1000" >
+  
+              <!-- Card header -->
+              <div class="card" height="400">
+  
+                  <!-- Card header -->
+                  <div class="card-header" >Receipt flow trend of station 2:</div>
+      
+                  <!--Card content-->
+                  <div class="card-body">
+      
+                    <canvas id="lineChart2r"></canvas>
+      
+                  </div>
+      
+                </div>
+            <!--/.Card-->
+  
+            <!--Card-->
+            
+            <!--/.Card-->
+  
+          </div>
+          <!--Grid column-->
+  
+        </div></div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="row wow fadeIn">
+
+          <div class="col-lg-6 col-md-6 mb-4" width="400" height="600">
+    
+            <!--Card-->
+            <div class="card  mb-4" width="400" height="1000" >
+  
+              <!-- Card header -->
+              <div class="card" height="400">
+  
+                  <!-- Card header -->
+                  <div class="card-header" >Forward flow trend of station 2:</div>
+      
+                  <!--Card content-->
+                  <div class="card-body">
+      
+                    <canvas id="lineChart2f"></canvas>
+      
+                  </div>
+      
+                </div>
+            <!--/.Card-->
+  
+            <!--Card-->
+            
+            <!--/.Card-->
+  
+          </div>
+          <!--Grid column-->
+  
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4" height="1000">
+
+            <!--Card-->
+            <div class="card" height="400">
+  
+              <!-- Card header -->
+              <div class="card-header" >Receipt flow trend of station 3:</div>
+  
+              <!--Card content-->
+              <div class="card-body">
+  
+                <canvas id="lineChart3"></canvas>
+  
+              </div>
+  
+            </div>
+            <!--/.Card-->
+  
+          </div>
+          <!--Grid row-->
+    
+          <!--Grid row-->
+         
+            <!--Grid column-->
+    
+            <!--Grid column-->
+           
+          <!--Grid row-->
+    
+          <!--Grid row-->
+         </div>
+        
+        </div>
+            <div data-spy="scroll" data-target="#pressure" class="scrollspy-example z-depth-1 mt-4" data-offset="0">
+                          
+                <h2 style=" font-weight: 700;" id="pressure">Pressure of individual stations and their valves:</h2>
+            <div class="row wow fadeIn">
+                <div class="col-lg-6 col-md-6 mb-4" height="1000">
+    
+                    <!--Card-->
+                    <div class="card" height="400">
+          
+                      <!-- Card header -->
+                      <div class="card-header" >Time series based line chart for daily cases until now</div>
+          
+                      <!--Card content-->
+                      <div class="card-body">
+          
+                        <canvas id="lineChart2"></canvas>
+          
+                      </div>
+          
+                    </div>
+                    <!--/.Card-->
+          
+                  </div>
+                <div class="col-md-6 mb-4">
+    
+                    <!--Card-->
+                    <div class="card" height="400">
+    
+                        <!-- Card header -->
+                        <div class="card-header" >Time series based line chart for total cases until now</div>
+            
+                        <!--Card content-->
+                        <div class="card-body">
+            
+                          <canvas id="lineChart"></canvas>
+            
+                        </div>
+            
+                      </div>
+                      <!--/.Card-->
+            
+                    </div>
+            </div>
+         
+            <!--Grid column-->
+    
+            <!--Grid column-->
+           
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+    
+          <!--Grid row-->
+         
+          <!--Grid row-->
+    
+        </div>
+      </main>
+      <!--Main layout-->
+    
+      <!--Footer-->
+      <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+    
+        <!--Call to action-->
+        
+        <!--/.Call to action-->
+    
+        <hr class="my-4">
+    
+        <!-- Social icons -->
+        
+        <!-- Social icons -->
+    
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+        
+          <a href="home" style="color:white;"> Covinfo.com </a>
+        </div>
+        <!--/.Copyright-->
+    
+      </footer>
+      <!--/.Footer-->
+     
+      <!-- SCRIPTS -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+        
+      <!-- Bootstrap tooltips -->	
+    
+      <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js')}}"></script>
+      <!-- Bootstrap core JavaScript -->
+    
+      <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+      <!-- MDB core JavaScript -->
+    
+      <script type="text/javascript" src="{{ url_for('static', filename='js/mdb.min.js')}}"></script>
+      <!-- Initializations -->
+      <script type="text/javascript">
+          // Animations initialization
+          new WOW().init();
+      </script>
+    
+    
+      <!-- Charts -->
+      <script>
+        // Line
+      
+              window.addEventListener('load', setupForLine);
+              var sw;
+             
+              setInterval(function() {
+                const url1 = 'http://127.0.0.1:5000/d'
+                const url2 = 'http://127.0.0.1:5000/r'
+                const url3 = 'http://127.0.0.1:5000/p'
+    const response1 = fetch(url1).then(response1 => response1.json())  
+  .then(json => console.log(json))
+    console.log(response1);
+    const response2 = fetch(url2).then(response2 => response2.json())  
+  .then(json => console.log(json))
+    console.log(response2);
+    const response3 = fetch(url3).then(response3 => response3.json())  
+  .then(json => console.log(json))
+    console.log(response3);
+                setupForLine();
+ },5000);
+             
+
+
+     //line
+      
+       async function setupForLine() {
+        console.log('h');
+
+          $('#lineChart1').remove(); // this is my <canvas> element
+  $('#graph-container').append('<canvas id="lineChart1" ><canvas>');
+    console.log('i');
+
+             const s1flow = await getDataForLine();
+    
+        var ctxL = document.getElementById("lineChart1").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+          type: 'line',
+          data: {
+            labels: [],
+            datasets: [{
+              label:'Real time output flow for station 1',
+                borderColor: '#3D52C2',
+                borderWidth: 1,
+                data: [],
+                pointBackgroundColor: [
+                ],
+                pointBorderColor: [
+                  
+                ]
+              },
+              {
+                label:'Predicted output flow for station 1',
+                borderColor: '#D12E4E'
+              },
+              
+             
+            ]
+          },
+          options: {
+            responsive: true,
+            legend: {
+            labels: {
+                borderColor: "red",
+                fontSize: 18
+            }
+          }
+
+        }});
+        console.log('j');
+
+        addData();
+        function addData() {
+         
+
+      //       var data = JSON.parse('{{ data | tojson | safe}}');
+      //       var i=0;
+      //       data.forEach(function(key) {
+      //       if(i%200==0){
+      //         myLineChart.data.labels.push(key.TIME);
+      // myLineChart.data.datasets[0].data.push(parseFloat(key.S1OutputFlow));
+      // myLineChart.data.datasets[0].pointBorderColor.push('#0cc294'); 
+      // myLineChart.data.datasets[0].pointBackgroundColor.push('#0cc294');              
+             
+      //       }
+      //     //console.log(key.state);      console.log(key.active);
+          
+      // i++;
+      //       });
+            var x = JSON.parse('{{ r | tojson | safe}}');
+            var i=0;
+            x.forEach(function(key) {                
+            
+      myLineChart.data.labels.push(key.TIME);
+      myLineChart.data.datasets[0].data.push(parseFloat(key.S1OutputFlow));
+      myLineChart.data.datasets[0].pointBorderColor.push('#3D52C2');
+      myLineChart.data.datasets[0].pointBackgroundColor.push('#3D52C2');              
+
+     
+    });
+    
+    var y = JSON.parse('{{ p | tojson | safe}}');
+    console.log(y);
+            var i=0;
+            y.forEach(function(key) {                
+            
+      myLineChart.data.labels.push(key.TIME);
+      myLineChart.data.datasets[0].data.push(parseFloat(key.S1OutputFlow));
+      myLineChart.data.datasets[0].pointBorderColor.push('#D12E4E');
+      myLineChart.data.datasets[0].pointBackgroundColor.push('#D12E4E');              
+
+     
+    });
+      myLineChart.update();
+      console.log('k');
+
+
+    }        
+} 
+     
+    async function getDataForLine() {
+    
+    
+            var m=0; 
+            const time=[];
+            const flow=[];
+            var data = JSON.parse('{{ data | tojson | safe}}');
+
+            data.forEach(function(key) {
+            
+          //console.log(key.state);      console.log(key.active);
+            time.push(key.TIME);
+            flow.push(parseFloat(key.S1OutputFlow));
+            
+    
+        });
+            
+            return {time, flow}
+          }
+          setupForLine2r();
+          async function setupForLine2r() {
+             const s1flow = await getDataForLine2r();
+    
+        var ctxL = document.getElementById("lineChart2r").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+          type: 'line',
+          data: {
+            labels: s1flow.time,
+            datasets: [{
+                label: "Receipt flow for station 2",
+                backgroundColor: [
+                  'transparent',
+                ],
+                borderColor: [
+                  '#0cc294',
+                ],
+                borderWidth: 2,
+                data: s1flow.flow
+              }
+             
+            ]
+          },
+          options: {
+            responsive: true
+          }
+        });
+    }
+    async function getDataForLine2r() {
+    
+    
+            var m=0; 
+            const time=[];
+            const flow=[];
+            var data = JSON.parse('{{ data | tojson | safe}}');
+
+            data.forEach(function(key) {
+            
+          //console.log(key.state);      console.log(key.active);
+            time.push(key.TIME);
+            flow.push(parseFloat(key.S2Receipt));
+            
+    
+        });
+            
+            return {time, flow}
+          }
+          setupForLine2f();
+          async function setupForLine2f() {
+             const s1flow = await getDataForLine2f();
+    
+        var ctxL = document.getElementById("lineChart2f").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+          type: 'line',
+          data: {
+            labels: s1flow.time,
+            datasets: [{
+                label: "Forward flow for station 2",
+                backgroundColor: [
+                  'transparent',
+                ],
+                borderColor: [
+                  '#0cc294',
+                ],
+                borderWidth: 2,
+                data: s1flow.flow
+              }
+             
+            ]
+          },
+          options: {
+            responsive: true
+          }
+        });
+    }
+    async function getDataForLine2f() {
+    
+    
+            var m=0; 
+            const time=[];
+            const flow=[];
+            var data = JSON.parse('{{ data | tojson | safe}}');
+
+            data.forEach(function(key) {
+            
+          //console.log(key.state);      console.log(key.active);
+            time.push(key.TIME);
+            flow.push(parseFloat(key.S2Forward));
+            
+    
+        });
+            
+            return {time, flow}
+          }
+          setupForLine3();
+          async function setupForLine3() {
+             const s1flow = await getDataForLine3();
+    
+        var ctxL = document.getElementById("lineChart3").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+          type: 'line',
+          data: {
+            labels: s1flow.time,
+            datasets: [{
+                label: "Receipt flow trend for station 3",
+                backgroundColor: [
+                  'transparent',
+                ],
+                borderColor: [
+                  '#0cc294',
+                ],
+                borderWidth: 2,
+                data: s1flow.flow
+              }
+             
+            ]
+          },
+          options: {
+            responsive: true
+          }
+        });
+    }
+    async function getDataForLine3() {
+    
+    
+            var m=0; 
+            const time=[];
+            const flow=[];
+            var data = JSON.parse('{{ data | tojson | safe}}');
+
+            data.forEach(function(key) {
+            
+          //console.log(key.state);      console.log(key.active);
+            time.push(key.TIME);
+            flow.push(parseFloat(key.S3RECEIPT));
+            
+    
+        });
+            
+            return {time, flow}
+          }
+     //line2
+    
+        //radar
+        
+        //doughnut
+        
+    
+      </script>
+    
+      <!--Google Maps-->
+      <script src="https://maps.google.com/maps/api/js"></script>
+      
+       
+    </body>
+    
+    </html>
+    
