@@ -20,3 +20,5 @@ Alert,Low output flow,"1. Release valves to increase gas throughput.
 ,Pump restart,"1. Tighen the values to maitain pressure. 
 2. Gradually increase pump voltage. 
 3. When pump operates at normal range, release the valves."
+,Low tank level,"1.Restart the pump and gradually increase input pressure
+2.Gradually decrease pump voltage."
