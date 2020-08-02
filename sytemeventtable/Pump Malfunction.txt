@@ -1,0 +1,4 @@
+1.  Verify the pump's operating pressure. 
+2.  If pressure is over safe range,reduce pump voltage to decrease the pressure. 
+3.  If pressure is below safe range, check the tank level and refill the tank if needed. 
+4.  Perform a thorough pump test as soon as pipeline stabilizes.
