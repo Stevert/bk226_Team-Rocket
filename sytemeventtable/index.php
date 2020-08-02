@@ -51,7 +51,87 @@
               font-size: 16px;
 			  font-family: Arial;
 			} 
-    </style>
+    	#navbar {
+  overflow: hidden;
+  background-color: #333;
+	z-index:1030;
+}
+
+#navbar a {
+  float: left;
+  display: inline;
+  color: #f2f2f2;
+  text-align: left;
+	padding-top:14px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar p {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: red;
+}
+#navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+
+.show {
+  display: block;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+	
+}
+    </style><body><header>
+		<div  id="navbar" >
+		<a class=" waves-effect" href="https://gailonline.com/CR-JoinGail.html">
+                <img src="images/gail.jpeg" height="40" width="45"alt="">
+            </a>
+		<a  href="documentation.php">Documentation</a>
+  <a href="mitigation.php">Mitigation</a>
+  <a href="report.php">Reports</a>
+	<a href="logout.php">Logout</a>
+	<p><?php session_start(); echo $_SESSION['name'].', '. $_SESSION['des'];?></p>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script></header>
+ <main class="pt-5 mx-lg-5">
 	<div class="container-fluid mt-5">
 	<div class="card">
  <div class="card-header text-center " height="400" >
@@ -626,7 +706,7 @@ array_shift($d);
 
 
 	
-</div>
+</div></main></body>
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
