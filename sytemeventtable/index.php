@@ -107,9 +107,9 @@ if (strpos($cells[7], "Critical")!==false){
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Reason for alarm</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Nature</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Sensor type</th>
-					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">range</th>
-					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm type</th>  
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Value</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm occurrence</th> 
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm type</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;"> Action needed</th>           
 				  </tr>
 				</thead>
@@ -122,11 +122,11 @@ if (strpos($cells[7], "Critical")!==false){
 		$cells = array(); 
 		$cells = explode(",",$lines[$i]); // use the cell/row delimiter what u need!
 		echo "<tr>";
-		for($k=0;$k<count($cells);$k++)
+		for($k=0;$k<count($cells)-1;$k++)
 		{
-		  if($k!=1 && $k!=7) 
-		  echo "<td>".$cells[$k]."</td>";
-		  if($k==7) {
+		  if($k!=1 && $k!=8) 
+		  echo "<td style='text-align:center';>".$cells[$k]."</td>";
+		  if($k==8) {
 		  echo "<td bgcolor='".$cells[1]."' style=color:white;>".$cells[$k]."</td>";
 		 	if (strpos($cells[$k], "Critical")!==false) 
 				  echo '<td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal'.$i.'">View</button>
@@ -141,8 +141,8 @@ if (strpos($cells[7], "Critical")!==false){
 		$mitigation=fopen($cells[3].".txt","r");
 		$fr1 = fread($mitigation, filesize($cells[3].".txt"));
 		fclose($mitigation);
-		#$lines1 = array();
-		#$lines1 = explode("\n",$fr1);
+		$lines1 = array();
+		$lines1 = explode("\n",$fr1);
 		echo'<!-- Modal -->
 		<div class="modal fade" id="myModal'.$i.'" role="dialog">
 		  <div class="modal-dialog">
@@ -155,8 +155,10 @@ if (strpos($cells[7], "Critical")!==false){
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 			  </div>
 			  <div class="modal-body">
-				'.$fr1.'
-			  </div>
+				';
+			foreach($lines1 as $line)
+				echo $line."<br>";	
+			  echo '</div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			  </div>
