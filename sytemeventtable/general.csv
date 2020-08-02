@@ -1,0 +1,22 @@
+Alert Class,Reason,Response to initiate
+Critical,Pump Malfunction,"1. Verify the pump's operating pressure.
+2. If pressure is over safe range,reduce pump voltage to decrease the pressure.
+3.If pressure is below safe range, check the tank level and refill the tank if needed. 
+4. Perform a thorough pump test as soon as pipeline stabilizes."
+,Pump may trip,"1.  Slow reduce the pump voltage to control pressure. 
+2. Losen the valves to prevent pressure increase.
+3. Conitnuously monitor the condition at all stations.
+4. Tighten the valves to maintain gas flow"
+,Pump Tripped,"1. Tighten the valves to prevent pressure loss.
+2. Restart the pump and gradually increase its pressure. 
+3. Release the valve when system stabilizes "
+,Low pump operation,"1. Check the throughput into the system. 
+2. If throughput is very high, then dismiss the alert.
+3. If throughput is very low, gradually increase the pump pressure."
+Alert,Low output flow,"1. Release valves to increase gas throughput.
+2. Gradualy increase the pump pressure."
+,High Pump pressure,"1. Reduce the pump voltage. 
+2. Tighten the valves to maintain the flow."
+,Pump restart,"1. Tighen the values to maitain pressure. 
+2. Gradually increase pump voltage. 
+3. When pump operates at normal range, release the valves."

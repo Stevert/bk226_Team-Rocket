@@ -1,0 +1,5 @@
+﻿Alarm Type,Mitigation Policies
+Critical,Notify admin 
+Danger,"Wait for some time.If not resolved,notify Admin"
+Alert,Policies shown at dashboard
+No Alert,Normal condition

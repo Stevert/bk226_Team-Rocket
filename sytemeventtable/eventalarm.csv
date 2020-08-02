@@ -1,0 +1,6 @@
+Timestamp,Log,Status
+8:10:00,Pump,Started
+12:00:05,Pump,Stopped
+14:30:00,Pump,Tripped
+21:20:00,Tank level,Low
+11:05:00,Tank level,High
