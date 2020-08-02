@@ -17,7 +17,7 @@ def copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i):
   #print(time_csv)
   mask=(reason_csv['Class']==actual_class)
 
-  #time_csv.iloc[loc,3]=reason_csv.loc[mask,'Reason for alarm']
+  time_csv.iloc[loc,3]=reason_csv.loc[mask,'Reason for alarm'].values[0]
   #print(time_csv)
   time_csv.iloc[loc,2]=reason_csv.loc[mask,'Component'].values[0]
   #print(time_csv)
@@ -33,7 +33,7 @@ def copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i):
   location=np.random.choice(['Mumbai','Pune','Solapur'])
   time_csv.iloc[loc,9]=location
   #print(time_csv)
-  time_csv.iloc[loc,7]+=1
+  time_csv.iloc[loc,7]=1
   #print(time_csv)
   return time_csv
 
@@ -42,7 +42,7 @@ def f():
   
   path=""
 
-  alarm_data=pd.read_excel(path+'Alarm1.xlsx',sheet_name=1)
+  alarm_data=pd.read_csv(path+'Alarmfin.csv')
   reason_csv=pd.read_excel(path+'Alarm Reasons.xlsx',sheet_name=0)
   test_col=['Tank Level'	,'S1 Input PT'	,'S1 Output PT'	,'S1 Output Flow', 'Temperature']
   test=alarm_data[test_col]
@@ -74,7 +74,7 @@ def f():
     simul=pd.DataFrame(columns=['Tank Level','Input Pressure','Output Pressure','Output Flow','Temperature','Actual Class','Predicted Class'])
 
     actual_class=classes.iloc[i]['Class']
-    print(actual_class)
+    #print(actual_class)
     predicted_class=classes.iloc[i]['Class']
 
 
@@ -90,7 +90,7 @@ def f():
       else:'''
       for sensor in sensors:
         time_csv = time_csv.append(pd.Series(),ignore_index=True)
-        print(time_csv)
+        #print(time_csv)
         time_csv=copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i)
         loc+=1
 
@@ -101,7 +101,7 @@ def f():
       
       for sensor in sensors:
         time_csv = time_csv.append(pd.Series(),ignore_index=True)
-        print(time_csv)
+        #print(time_csv)
         time_csv=copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i)
         loc+=1
 
@@ -113,7 +113,7 @@ def f():
       
       for sensor in sensors:
         time_csv = time_csv.append(pd.Series(),ignore_index=True)
-        print(time_csv)
+        #print(time_csv)
         time_csv=copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i)
         loc+=1
 
@@ -123,7 +123,7 @@ def f():
       
       for sensor in sensors:
         time_csv = time_csv.append(pd.Series(),ignore_index=True)
-        print(time_csv)
+        #print(time_csv)
         time_csv=copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i)
         loc+=1
 
@@ -134,7 +134,7 @@ def f():
       
       for sensor in sensors:
         time_csv = time_csv.append(pd.Series(),ignore_index=True)
-        print(time_csv)
+        #print(time_csv)
         time_csv=copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i)
         loc+=1
 
@@ -145,7 +145,7 @@ def f():
       
       for sensor in sensors:
         time_csv = time_csv.append(pd.Series(),ignore_index=True)
-        print(time_csv)
+        #print(time_csv)
         time_csv=copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i)
         loc+=1
 
@@ -157,7 +157,7 @@ def f():
       
       for sensor in sensors:
         time_csv = time_csv.append(pd.Series(),ignore_index=True)
-        print(time_csv)
+        #print(time_csv)
         time_csv=copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i)
         loc+=1
 
@@ -170,16 +170,17 @@ def f():
       
       for sensor in sensors:
         time_csv = time_csv.append(pd.Series(),ignore_index=True)
-        print(time_csv)
+        #print(time_csv)
         time_csv=copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i)
         loc+=1
 
     #print(time_csv)
     #print(loc)
     time_csv.to_csv('copy.csv',index=False) 
-    print(time_csv)
+    #print(time_csv)
     
-  time.sleep(5)
+
+    time.sleep(5)
 
 f()
     
