@@ -8,18 +8,17 @@
     <title>TEAM_ROCKET</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Modern+Antiqua" />
+ 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    
 
     <!-- Bootstrap core CSS -->
 
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="{{ url_for('static', filename='css/mdb.min.css')}}" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="{{ url_for('static', filename='css/style.min.css')}}" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <style>
   @media (max-width: 400px) {
@@ -275,17 +274,17 @@
      
       <!-- SCRIPTS -->
       <!-- JQuery -->
-      <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         
       <!-- Bootstrap tooltips -->	
     
-      <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js')}}"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
       <!-- Bootstrap core JavaScript -->
     
-      <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
       <!-- MDB core JavaScript -->
     
-      <script type="text/javascript" src="{{ url_for('static', filename='js/mdb.min.js')}}"></script>
+      <script type="text/javascript" src="js/mdb.min.js"></script>
       <!-- Initializations -->
       <script type="text/javascript">
           // Animations initialization
@@ -299,35 +298,28 @@
       
               window.addEventListener('load', setupForLine);
               var sw;
-             
+              var vr=203;
+      var vp=1;
               setInterval(function() {
-                const url1 = 'http://127.0.0.1:5000/d'
-                const url2 = 'http://127.0.0.1:5000/r'
-                const url3 = 'http://127.0.0.1:5000/p'
-    const response1 = fetch(url1).then(response1 => response1.json())  
-  .then(json => console.log(json))
-    console.log(response1);
-    const response2 = fetch(url2).then(response2 => response2.json())  
-  .then(json => console.log(json))
-    console.log(response2);
-    const response3 = fetch(url3).then(response3 => response3.json())  
-  .then(json => console.log(json))
-    console.log(response3);
+                vr++;
+                vp++;
                 setupForLine();
  },5000);
              
-
-
+ 
      //line
       
        async function setupForLine() {
         console.log('h');
-
+        var real_api_url='https://api.jsonbin.io/b/5f21d4ad91806166284b97f1/'+vr;
+ var pred_api_url='https://api.jsonbin.io/b/5f21d500c1edc46617610209/'+vp;
           $('#lineChart1').remove(); // this is my <canvas> element
+          console.log(real_api_url);
+          console.log(pred_api_url);
   $('#graph-container').append('<canvas id="lineChart1" ><canvas>');
     console.log('i');
 
-             const s1flow = await getDataForLine();
+             //const s1flow = await getDataForLine();
     
         var ctxL = document.getElementById("lineChart1").getContext('2d');
         var myLineChart = new Chart(ctxL, {
@@ -366,7 +358,7 @@
         console.log('j');
 
         addData();
-        function addData() {
+        async function addData() {
          
 
       //       var data = JSON.parse('{{ data | tojson | safe}}');
@@ -383,197 +375,206 @@
           
       // i++;
       //       });
-            var x = JSON.parse('{{ r | tojson | safe}}');
-            var i=0;
-            x.forEach(function(key) {                
-            
-      myLineChart.data.labels.push(key.TIME);
-      myLineChart.data.datasets[0].data.push(parseFloat(key.S1OutputFlow));
-      myLineChart.data.datasets[0].pointBorderColor.push('#3D52C2');
-      myLineChart.data.datasets[0].pointBackgroundColor.push('#3D52C2');              
-
      
-    });
+      const response = await fetch(real_api_url);
+        const x = await response.json();
+        console.log(x);
+     x.forEach(function(key) {                
+            
+            myLineChart.data.labels.push(key.TIME);
+            myLineChart.data.datasets[0].data.push(parseFloat(key.S1OutputFlow));
+            myLineChart.data.datasets[0].pointBorderColor.push('#3D52C2');
+            myLineChart.data.datasets[0].pointBackgroundColor.push('#3D52C2');              
+      
+     });
+   
+     const resp = await fetch(pred_api_url);
+        const y = await resp.json();
+        console.log(y);
+     y.forEach(function(key) {                
+            
+            myLineChart.data.labels.push(key.TIME);
+            myLineChart.data.datasets[0].data.push(parseFloat(key.S1OutputFlow));
+            myLineChart.data.datasets[0].pointBorderColor.push('#D12E4E');
+            myLineChart.data.datasets[0].pointBackgroundColor.push('#D12E4E');  });
+            myLineChart.update();
+
+}
+
+
+   
     
-    var y = JSON.parse('{{ p | tojson | safe}}');
-    console.log(y);
             var i=0;
-            y.forEach(function(key) {                
-            
-      myLineChart.data.labels.push(key.TIME);
-      myLineChart.data.datasets[0].data.push(parseFloat(key.S1OutputFlow));
-      myLineChart.data.datasets[0].pointBorderColor.push('#D12E4E');
-      myLineChart.data.datasets[0].pointBackgroundColor.push('#D12E4E');              
+                        
 
      
-    });
-      myLineChart.update();
+   
       console.log('k');
 
 
     }        
-} 
+ 
      
-    async function getDataForLine() {
+    // async function getDataForLine() {
     
     
-            var m=0; 
-            const time=[];
-            const flow=[];
-            var data = JSON.parse('{{ data | tojson | safe}}');
+    //         var m=0; 
+    //         const time=[];
+    //         const flow=[];
+    //         var data = JSON.parse('{{ data | tojson | safe}}');
 
-            data.forEach(function(key) {
+    //         data.forEach(function(key) {
             
-          //console.log(key.state);      console.log(key.active);
-            time.push(key.TIME);
-            flow.push(parseFloat(key.S1OutputFlow));
+    //       //console.log(key.state);      console.log(key.active);
+    //         time.push(key.TIME);
+    //         flow.push(parseFloat(key.S1OutputFlow));
             
     
-        });
+    //     });
             
-            return {time, flow}
-          }
-          setupForLine2r();
-          async function setupForLine2r() {
-             const s1flow = await getDataForLine2r();
+    //         return {time, flow}
+    //       }
+    //       setupForLine2r();
+    //       async function setupForLine2r() {
+    //          const s1flow = await getDataForLine2r();
     
-        var ctxL = document.getElementById("lineChart2r").getContext('2d');
-        var myLineChart = new Chart(ctxL, {
-          type: 'line',
-          data: {
-            labels: s1flow.time,
-            datasets: [{
-                label: "Receipt flow for station 2",
-                backgroundColor: [
-                  'transparent',
-                ],
-                borderColor: [
-                  '#0cc294',
-                ],
-                borderWidth: 2,
-                data: s1flow.flow
-              }
+    //     var ctxL = document.getElementById("lineChart2r").getContext('2d');
+    //     var myLineChart = new Chart(ctxL, {
+    //       type: 'line',
+    //       data: {
+    //         labels: s1flow.time,
+    //         datasets: [{
+    //             label: "Receipt flow for station 2",
+    //             backgroundColor: [
+    //               'transparent',
+    //             ],
+    //             borderColor: [
+    //               '#0cc294',
+    //             ],
+    //             borderWidth: 2,
+    //             data: s1flow.flow
+    //           }
              
-            ]
-          },
-          options: {
-            responsive: true
-          }
-        });
-    }
-    async function getDataForLine2r() {
+    //         ]
+    //       },
+    //       options: {
+    //         responsive: true
+    //       }
+    //     });
+    // }
+    // async function getDataForLine2r() {
     
     
-            var m=0; 
-            const time=[];
-            const flow=[];
-            var data = JSON.parse('{{ data | tojson | safe}}');
+    //         var m=0; 
+    //         const time=[];
+    //         const flow=[];
+    //         var data = JSON.parse('{{ data | tojson | safe}}');
 
-            data.forEach(function(key) {
+    //         data.forEach(function(key) {
             
-          //console.log(key.state);      console.log(key.active);
-            time.push(key.TIME);
-            flow.push(parseFloat(key.S2Receipt));
+    //       //console.log(key.state);      console.log(key.active);
+    //         time.push(key.TIME);
+    //         flow.push(parseFloat(key.S2Receipt));
             
     
-        });
+    //     });
             
-            return {time, flow}
-          }
-          setupForLine2f();
-          async function setupForLine2f() {
-             const s1flow = await getDataForLine2f();
+    //         return {time, flow}
+    //       }
+    //       setupForLine2f();
+    //       async function setupForLine2f() {
+    //          const s1flow = await getDataForLine2f();
     
-        var ctxL = document.getElementById("lineChart2f").getContext('2d');
-        var myLineChart = new Chart(ctxL, {
-          type: 'line',
-          data: {
-            labels: s1flow.time,
-            datasets: [{
-                label: "Forward flow for station 2",
-                backgroundColor: [
-                  'transparent',
-                ],
-                borderColor: [
-                  '#0cc294',
-                ],
-                borderWidth: 2,
-                data: s1flow.flow
-              }
+    //     var ctxL = document.getElementById("lineChart2f").getContext('2d');
+    //     var myLineChart = new Chart(ctxL, {
+    //       type: 'line',
+    //       data: {
+    //         labels: s1flow.time,
+    //         datasets: [{
+    //             label: "Forward flow for station 2",
+    //             backgroundColor: [
+    //               'transparent',
+    //             ],
+    //             borderColor: [
+    //               '#0cc294',
+    //             ],
+    //             borderWidth: 2,
+    //             data: s1flow.flow
+    //           }
              
-            ]
-          },
-          options: {
-            responsive: true
-          }
-        });
-    }
-    async function getDataForLine2f() {
+    //         ]
+    //       },
+    //       options: {
+    //         responsive: true
+    //       }
+    //     });
+    // }
+    // async function getDataForLine2f() {
     
     
-            var m=0; 
-            const time=[];
-            const flow=[];
-            var data = JSON.parse('{{ data | tojson | safe}}');
+    //         var m=0; 
+    //         const time=[];
+    //         const flow=[];
+    //         var data = JSON.parse('{{ data | tojson | safe}}');
 
-            data.forEach(function(key) {
+    //         data.forEach(function(key) {
             
-          //console.log(key.state);      console.log(key.active);
-            time.push(key.TIME);
-            flow.push(parseFloat(key.S2Forward));
+    //       //console.log(key.state);      console.log(key.active);
+    //         time.push(key.TIME);
+    //         flow.push(parseFloat(key.S2Forward));
             
     
-        });
+    //     });
             
-            return {time, flow}
-          }
-          setupForLine3();
-          async function setupForLine3() {
-             const s1flow = await getDataForLine3();
+    //         return {time, flow}
+    //       }
+    //       setupForLine3();
+    //       async function setupForLine3() {
+    //          const s1flow = await getDataForLine3();
     
-        var ctxL = document.getElementById("lineChart3").getContext('2d');
-        var myLineChart = new Chart(ctxL, {
-          type: 'line',
-          data: {
-            labels: s1flow.time,
-            datasets: [{
-                label: "Receipt flow trend for station 3",
-                backgroundColor: [
-                  'transparent',
-                ],
-                borderColor: [
-                  '#0cc294',
-                ],
-                borderWidth: 2,
-                data: s1flow.flow
-              }
+    //     var ctxL = document.getElementById("lineChart3").getContext('2d');
+    //     var myLineChart = new Chart(ctxL, {
+    //       type: 'line',
+    //       data: {
+    //         labels: s1flow.time,
+    //         datasets: [{
+    //             label: "Receipt flow trend for station 3",
+    //             backgroundColor: [
+    //               'transparent',
+    //             ],
+    //             borderColor: [
+    //               '#0cc294',
+    //             ],
+    //             borderWidth: 2,
+    //             data: s1flow.flow
+    //           }
              
-            ]
-          },
-          options: {
-            responsive: true
-          }
-        });
-    }
-    async function getDataForLine3() {
+    //         ]
+    //       },
+    //       options: {
+    //         responsive: true
+    //       }
+    //     });
+    // }
+    // async function getDataForLine3() {
     
     
-            var m=0; 
-            const time=[];
-            const flow=[];
-            var data = JSON.parse('{{ data | tojson | safe}}');
+    //         var m=0; 
+    //         const time=[];
+    //         const flow=[];
+    //         var data = JSON.parse('{{ data | tojson | safe}}');
 
-            data.forEach(function(key) {
+    //         data.forEach(function(key) {
             
-          //console.log(key.state);      console.log(key.active);
-            time.push(key.TIME);
-            flow.push(parseFloat(key.S3RECEIPT));
+    //       //console.log(key.state);      console.log(key.active);
+    //         time.push(key.TIME);
+    //         flow.push(parseFloat(key.S3RECEIPT));
             
     
-        });
+    //     });
             
-            return {time, flow}
-          }
+    //         return {time, flow}
+    //       }
      //line2
     
         //radar
