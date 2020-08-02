@@ -161,7 +161,8 @@ function myFunction() {
 <?php
 if (strpos($cells[8], "Critical")!==false){ 
 	#print_r($cells[8]);
-	
+	$_SESSION['cause']=$cells[3];
+	require 'mailAdmin.php';
 	?>
 <div class="card"style="margin-top:5px;">
 <div class="container-fluid fixed-top ">
