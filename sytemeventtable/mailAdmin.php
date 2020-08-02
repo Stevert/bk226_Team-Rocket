@@ -40,12 +40,12 @@ $mail->Subject = "Critical alert!";
 $mail->Body = 
 "Hi ,<br/><br/> Critical alert generated due to '.$cause.'<br/>";
 
-// if(!$mail->Send())
-//     echo "Message was not sent <br />PHPMailer Error: " . $mail->ErrorInfo;
-// else{
-// echo "Message has been sent";		
-// 	}
-//     header('Location:index.php?ID=0');	
+if(!$mail->Send())
+    echo "Message was not sent <br />PHPMailer Error: " . $mail->ErrorInfo;
+else{
+//echo "Message has been sent";		
+	}
+	
 	
 ?>
 <script>  </script>
