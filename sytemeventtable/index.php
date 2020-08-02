@@ -67,6 +67,16 @@
 </div></div>
 <hr/>
 <div class="card"style="margin-top:5px;">
+<div class="container-fluid fixed-top ">
+    <div class=row>
+    <div class=" ml-auto col-auto alert alert-warning alert-dismissible fade show" role="alert">
+   <strong><b>KEEP CALM!</b></strong> <br> You symptoms have been forwarded to your doctor.
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+   </button>
+   </div>
+    </div>
+  </div>
 	<div class="container">
 	<div class="card-header " >
 		<h3 class="card-title" style="font-family:Arial;">Timestamp alarm list</h3></div>
@@ -91,7 +101,7 @@
 	fclose($f);
 	$lines = array();
 	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
-	
+
 	for($i=count($lines)-2;$i>=count($lines)-8;$i--)
 	{
 		
