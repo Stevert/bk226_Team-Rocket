@@ -72,13 +72,15 @@
 	fclose($f);
 	$lines = array();
 	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of...
-	$cells = array(); 
-	$cells = explode(",",$lines[1]);
-
+	$cells = array();
+	$len= count($lines);
+	$cells = explode(",",$lines[$len-1]);
+	
 	?>
 <hr/>
 <?php
-if (strpos($cells[7], "Critical")!==false){ 
+if (strpos($cells[8], "Critical")!==false){ 
+	#print_r($cells[8]);
 	
 	?>
 <div class="card"style="margin-top:5px;">
@@ -116,7 +118,7 @@ if (strpos($cells[7], "Critical")!==false){
 	<tbody>
 	
 <?php
-	for($i=count($lines)-2;$i>=count($lines)-8;$i--)
+	for($i=count($lines)-1;$i>=1;$i--)
 	{
 		
 		$cells = array(); 
