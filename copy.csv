@@ -6,4 +6,5 @@ timestamp,colour,Component,Reason for alarm,Nature,Sensor type,range,Alarm type
 3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Fow,>300,Critical (Corelated)
 3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Pump,>240 Voltage,Critical (Corelated)
 3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Pressure,> 90,Critical (Corelated)
+3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Pressure,> 90,Critical 
 
