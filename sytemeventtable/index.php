@@ -341,7 +341,7 @@ array_shift($d);
 		 fontFamily: "Arial"
      }],
      data: [{
-         type: "pie",
+         type: "column",
          indexLabel: "{label} ({y})",
          dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
      }]
@@ -361,7 +361,7 @@ array_shift($d);
 		 fontFamily: "Arial"
      }],
      data: [{
-         type: "pie",
+         type: "column",
          //yValueFormatString: "#,##0.00\"%\"",
          indexLabel: "{label} ({y})",
          dataPoints: <?php echo json_encode($dataP, JSON_NUMERIC_CHECK); ?>
@@ -424,13 +424,99 @@ array_shift($d);
  
       
 	  <div class="row wow fadeIn">
+
+	  <div class="col-lg-5 col-md-5 mb-4"><div class="card  mb-4" width="400" height="400" >
+	
+				<div class="card-header " >
+		<h3 class="card-title" style="font-family:Arial;">Frequency of alarms</h3></div>
+		<div class="table-responsive-sm table table-hover">
+			<table class="scrolldown">
+				<thead style="border-color :#5aa7a7;">
+				  <tr>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;" >Reason for alarm</th>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Frequency</th>
+					        
+				  </tr>
+				</thead>
+	<tbody>
+	<?Php 
+	$f = fopen("freq1.csv", "r");
+	$fr = fread($f, filesize("freq1.csv"));
+	fclose($f);
+	$lines = array();
+	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
+	
+	for($i=count($lines)-2;$i>0;$i--)
+	{
+		
+		$cells = array(); 
+		$cells = explode(",",$lines[$i]); // use the cell/row delimiter what u need!
+		echo "<tr>";
+		for($k=0;$k<count($cells);$k++)
+		{
+		  
+		  echo "<td>".$cells[$k]."</td>";
+		  
+		}
+		// for k end
+		echo "</tr>";
+	}
+	// for i end
+	/* echo "</table></body></html>"; */
+	?> 
+	
+	</tbody> 
+			  </table>
+		  </div></div></div>
                 <div class="col-lg-5 col-md-5 mb-4"><div class="card  mb-4" width="400" height="400" ><div class="card-header" >
                     <!--Card--><h3 class="card-title " style="font-family:Arial;">Frequency of alarms</h3>
 					</div>
                     <div class="card-body" >
     <div id="chartContainer1" style="height: 370px; width: 100%;"></div></div></div></div>
 	
-	<div class="col-lg-1 col-md-1 mb-1"></div>
+	<div class="col-lg-5 col-md-5 mb-4"><div class="card  mb-4" width="400" height="400" >
+	
+				<div class="card-header " >
+		<h3 class="card-title" style="font-family:Arial;">Classification of alarms</h3></div>
+		<div class="table-responsive-sm table table-hover">
+			<table class="scrolldown">
+				<thead style="border-color :#5aa7a7;">
+				  <tr>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;" >Status</th>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Frequency</th>
+					        
+				  </tr>
+				</thead>
+	<tbody>
+	<?Php 
+	$f = fopen("freq2.csv", "r");
+	$fr = fread($f, filesize("freq2.csv"));
+	fclose($f);
+	$lines = array();
+	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
+	
+	for($i=count($lines)-2;$i>0;$i--)
+	{
+		
+		$cells = array(); 
+		$cells = explode(",",$lines[$i]); // use the cell/row delimiter what u need!
+		echo "<tr>";
+		for($k=0;$k<count($cells);$k++)
+		{
+		  
+		  echo "<td>".$cells[$k]."</td>";
+		  
+		}
+		// for k end
+		echo "</tr>";
+	}
+	// for i end
+	/* echo "</table></body></html>"; */
+	?> 
+	
+	</tbody> 
+			  </table>
+		  </div></div></div>
 	
 	<div class="col-lg-5 col-md-5 mb-4"><div class="card  mb-4" width="400" height="400" >
                     <!--Card--><div class="card-header" >
@@ -463,7 +549,7 @@ array_shift($d);
 	$lines = array();
 	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
 	
-	for($i=count($lines)-1;$i>=count($lines)-7;$i--)
+	for($i=count($lines)-2;$i>=count($lines)-7;$i--)
 	{
 		
 		$cells = array(); 
@@ -508,7 +594,7 @@ array_shift($d);
 	$lines = array();
 	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
 	
-	for($i=count($lines)-1;$i>=count($lines)-6;$i--)
+	for($i=count($lines)-2;$i>=count($lines)-6;$i--)
 	{
 		
 		$cells = array(); 
