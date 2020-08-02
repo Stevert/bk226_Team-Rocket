@@ -74,7 +74,7 @@
 	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of...
 	$cells = array();
 	$len= count($lines);
-	$cells = explode(",",$lines[$len-1]);
+	$cells = explode(",",$lines[$len-2]);
 	
 	?>
 <hr/>
@@ -118,7 +118,7 @@ if (strpos($cells[8], "Critical")!==false){
 	<tbody>
 	
 <?php
-	for($i=count($lines)-1;$i>=1;$i--)
+	for($i=count($lines)-2;$i>=1;$i--)
 	{
 		
 		$cells = array(); 
