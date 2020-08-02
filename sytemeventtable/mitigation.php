@@ -197,11 +197,19 @@ function myFunction() {
                         echo '</tr>';
                     }
                     // displaying contents
+                    $i=0;
                     while ($csvcontents = fgetcsv($handle)) {
                         echo '<tr>';
                         foreach ($csvcontents as $column) {
-                            echo "<td>$column</td>";
-                        }
+                          if($i==0)
+                           { echo "<td style='background-color:rgba(255,0,0,0.3)'>$column</td>";}
+                            else if($i==1)
+                            {echo "<td style='background-color:rgba(255,153,51,0.3)'>$column</td>";}
+                            else if($i==2)
+                           { echo "<td class='table-warning'>$column</td>";}
+                            else if($i==3)
+                            {echo "<td class='table-success'>$column</td>";}
+                        }$i++;
                         echo '</tr>';
                     }
                     echo '</table>';
@@ -238,12 +246,19 @@ function myFunction() {
                         }
                         echo '</tr>';
                     }
+                    $i=0;
                     // displaying contents
                     while ($csvcontents = fgetcsv($handle)) {
                         echo '<tr>';
                         foreach ($csvcontents as $column) {
-                            echo "<td>$column</td>";
-                        }
+                          if($i==0)
+                           { echo "<td style='background-color:rgba(255,0,0,0.3)'>$column</td>";}
+                           else if($i==4)
+                           { echo "<td class='table-warning'>$column</td>";}
+                           else 
+                           echo "<td class='table-success'>$column</td>";
+                           /*  echo "<td>$column</td>"; */
+                        }$i++;
                         echo '</tr>';
                     }
                     echo '</table>';
