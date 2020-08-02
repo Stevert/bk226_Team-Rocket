@@ -1,12 +1,12 @@
 <html><head>
-	
-	
+	<!-- <script src="graph.js"></script> -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 	<style>
 		.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
   border-style: groove;
   padding: 1em;
 }
@@ -25,5 +25,84 @@
 		<li class="center">Alert and critical  alarms are generated when the sensor readings are in yellow and red range boxes, respectively as shown above </li>
 		
 	</ol>
+	
 </div>
+<h5 style="text-align: center; font-size:40;">Patterns learnt by the system</h5>
+<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV -->
+<script>
+	Plotly.d3.csv('https://raw.githubusercontent.com/Stevert/bk226_Team-Rocket/master/alarmalarm.csv', function(err, rows){
+function unpack(rows, key) {
+	return rows.map(function(row)
+	{ return row[key]; });}
+
+var A = {
+	x:unpack(rows, 'x1'), y: unpack(rows, 'y1'), z: unpack(rows, 'z1'),
+	mode: 'markers',
+  color: unpack(rows, 'Class'),
+  hover_name: unpack(rows, 'Class'),
+  symbol: 'circle',
+	marker: {
+		size: 10,
+		line: {
+		color: 'rgba(217, 217, 217, 0.14)',
+		width: 0.5},
+		opacity: 1},
+	type: 'scatter3d'
+};
+  var C = {
+	x:unpack(rows, 'x2'), y: unpack(rows, 'y2'), z: unpack(rows, 'z2'),
+	mode: 'markers',
+  color: unpack(rows, 'Class'),
+  hover_name: unpack(rows, 'Class'),
+  symbol: 'circle',
+	marker: {
+		size: 10,
+		line: {
+		color: 'rgba(217, 217, 217, 0.14)',
+		width: 0.5},
+		opacity: 1},
+	type: 'scatter3d'
+};
+  var I = {
+	x:unpack(rows, 'x3'), y: unpack(rows, 'y3'), z: unpack(rows, 'z3'),
+	mode: 'markers',
+  color: unpack(rows, 'Class'),
+  hover_name: unpack(rows, 'Class'),
+  symbol: 'circle',
+	marker: {
+		size: 10,
+		line: {
+		color: 'rgba(217, 217, 217, 0.14)',
+		width: 0.5},
+		opacity: 1},
+	type: 'scatter3d'
+};
+  var Z = {
+	x:unpack(rows, 'x4'), y: unpack(rows, 'y4'), z: unpack(rows, 'z4'),
+	mode: 'markers',
+  color: unpack(rows, 'Class'),
+  hover_name: unpack(rows, 'Class'),
+  symbol: 'circle',
+	marker: {
+		size: 10,
+		line: {
+		color: 'rgba(217, 217, 217, 0.14)',
+		width: 0.5},
+		opacity: 1},
+	type: 'scatter3d'
+};
+
+
+var data = [A,C,I,Z];
+var layout = {margin: {
+	l: 0,
+	r: 0,
+	b: 0,
+	t: 0
+  }};
+Plotly.newPlot('myDiv', data, layout);
+});
+</script>
+</div>
+
 </body></html>
