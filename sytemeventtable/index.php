@@ -107,7 +107,7 @@ if (strpos($cells[7], "Critical")!==false){
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Reason for alarm</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Nature</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Sensor type</th>
-					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">range</th>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Value</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm occurrence</th> 
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm type</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;"> Action needed</th>           
@@ -122,7 +122,7 @@ if (strpos($cells[7], "Critical")!==false){
 		$cells = array(); 
 		$cells = explode(",",$lines[$i]); // use the cell/row delimiter what u need!
 		echo "<tr>";
-		for($k=0;$k<count($cells);$k++)
+		for($k=0;$k<count($cells)-1;$k++)
 		{
 		  if($k!=1 && $k!=8) 
 		  echo "<td style='text-align:center';>".$cells[$k]."</td>";

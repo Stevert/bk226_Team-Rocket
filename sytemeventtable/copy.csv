@@ -1,8 +1,8 @@
-timestamp,colour,Component,Reason for alarm,Nature,Sensor type,range, Alarm Occurrence,Alarm type
-12:20:25,red,Station 1,Pump Malfunction,Sudden increase in pressure,Pressure,60 -90,4,Critical
-12:20:30,orange,Valve 1,high pressure,Gradual Increase,Pressure,5,Alert
-12:30:35,red,Station 1,Pump Malfunction,,,1,Critical
-12:40:45,orange,Tank,low tank level,Decrease in input pressure,Flow,< 1.2,1,Alert
-3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Fow,>300,1,Critical (Corelated)
-3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Pump,>240 Voltage,1,Critical (Corelated)
-3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Pressure,> 90,1,Critical (Corelated)
+timestamp,colour,Component,Reason for alarm,Nature,Sensor type,range, Alarm Occurrence,Alarm type,Location
+12:20:25,red,Station 1,Pump Malfunction,Sudden increase in pressure,Pressure,60 -90,4,Critical,Mumbai
+12:20:30,orange,Valve 1,high pressure,Gradual Increase,Pressure,5,Alert,Mumbai
+12:30:35,red,Station 1,Pump Malfunction,,,1,Critical,Pune
+12:40:45,orange,Tank,low tank level,Decrease in input pressure,Flow,< 1.2,1,Alert,Pune
+3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Fow,>300,1,Critical (Corelated),Pune
+3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Pump,>240 Voltage,1,Critical (Corelated),Solapur
+3:30:45,red,Input pump,Input Pump Malfunction,Sudden increase in pressure,Pressure,> 90,1,Critical (Corelated),Mumbai
