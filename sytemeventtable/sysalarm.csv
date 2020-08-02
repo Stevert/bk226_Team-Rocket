@@ -1,0 +1,7 @@
+Timestamp,Alert,Status
+8:00:00,Acoustic,Success
+8:00,Hydro test,Success
+9:30:00,Pump status,Malfunction
+10:20:00,Sensor test,Success
+11:00:00,Sprinkler status,Success
+11:05:00,Hydro test,Success
