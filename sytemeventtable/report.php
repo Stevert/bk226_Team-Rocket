@@ -114,34 +114,34 @@
 
 <?php 
 $St1 = array( 
-	array("y" => 3373, "label" => "Critical" ),
-	array("y" => 2435, "label" => "Alert" ),
-	array("y" => 1842, "label" => "Critical (Corelated)" )
+	array("y" => 373, "label" => "Critical" ),
+	array("y" => 435, "label" => "Alert" ),
+	array("y" => 42, "label" => "Critical (Corelated)" )
 ); 
 ?>
 
 
 <?php 
 $V = array( 
-	array("y" => 4789, "label" => "Critical" ),
-	array("y" => 2325, "label" => "Alert" ),
-	array("y" => 1000, "label" => "Critical (Corelated)" )
+	array("y" => 489, "label" => "Critical" ),
+	array("y" => 325, "label" => "Alert" ),
+	array("y" => 10, "label" => "Critical (Corelated)" )
 ); 
 ?>
 
 <?php 
 $T = array( 
-	array("y" => 5454, "label" => "Critical" ),
-	array("y" => 2394, "label" => "Alert" ),
-	array("y" => 1999, "label" => "Critical (Corelated)" )
+	array("y" => 454, "label" => "Critical" ),
+	array("y" => 294, "label" => "Alert" ),
+	array("y" => 39, "label" => "Critical (Corelated)" )
 ); 
 ?>
 
 <?php 
 $P = array( 
-	array("y" => 2154, "label" => "Critical" ),
-	array("y" => 6794, "label" => "Alert" ),
-	array("y" => 4499, "label" => "Critical (Corelated)" )
+	array("y" => 254, "label" => "Critical" ),
+	array("y" => 474, "label" => "Alert" ),
+	array("y" => 49, "label" => "Critical (Corelated)" )
 ); 
 ?>
 
@@ -512,7 +512,7 @@ chart7.render();
     <div id="chartContainer4" style="height: 370px; width: 100%;"></div>
 </div></div>
 
-<button type="button" onclick="window.open('Sheet1.csv')">Download</button> 
+<button type="button" class="btn btn-link" onclick="window.open('Sheet1.csv')">Download<img src="download.png" style="width:25px;height:25px;"></button> 
 
 
 </div>

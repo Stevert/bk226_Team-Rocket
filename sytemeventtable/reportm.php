@@ -63,7 +63,7 @@
 
           <h1 class="card-title" style="font-family:Arial; padding:0;">
             
-        Monthly Report (jan-aug 2020)
+        Monthly Report December-20
           </h1>
 
         
@@ -75,39 +75,30 @@
 <?php
  
  $Pressure = array(
-   array("y" => 90.1, "label" => "Sunday"),
-     array("y" => 51.08, "label" => "Monday"),
-     array("y" => 65, "label" => "Tuesday"),
-     array("y" => 85, "label" => "Wednesday"),
-     array("y" => 51.05, "label" => "Thursday"),
-     array("y" => 37.57, "label" => "Friday"),
-     array("y" => 55.72, "label" => "Saturday")
+   array("y" => 65, "label" => "Week1"),
+     array("y" => 51.08, "label" => "Week2"),
+     array("y" => 65, "label" => "Week3"),
+     array("y" => 85, "label" => "Week4")
  );
   
  ?>
 <?php
  
  $Flow = array(
-   array("y" => 131.39, "label" => "Sunday"),
-     array("y" => 376, "label" => "Monday"),
-     array("y" => 270.06, "label" => "Tuesday"),
-     array("y" => 218.75, "label" => "Wednesday"),
-     array("y" => 376, "label" => "Thursday"),
-     array("y" => 270, "label" => "Friday"),
-     array("y" => 218.75, "label" => "Saturday")
+   array("y" => 131.39, "label" => "Week1"),
+     array("y" => 200, "label" => "Week2"),
+     array("y" => 270.06, "label" => "Week3"),
+     array("y" => 218.75, "label" => "Week4")
  );
   
  ?>
  <?php
  
  $Temp = array(
-   array("y" => 55.54, "label" => "Sunday"),
-     array("y" => 62.5, "label" => "Monday"),
-     array("y" => 72.5, "label" => "Tuesday"),
-     array("y" => 52.66, "label" => "Wednesday"),
-     array("y" => 43.5, "label" => "Thursday"),
-     array("y" => 80.61, "label" => "Friday"),
-     array("y" => 32.92, "label" => "Saturday")
+   array("y" => 55.54, "label" => "Week1"),
+     array("y" => 62.5, "label" => "Week2"),
+     array("y" => 72.5, "label" => "Week3"),
+     array("y" => 52.66, "label" => "Week4")
  );
   
  ?>
@@ -512,7 +503,7 @@ chart7.render();
     <div id="chartContainer4" style="height: 370px; width: 100%;"></div>
 </div></div>
 
-<button type="button" onclick="window.open('Sheet1.csv')">Download</button> 
+<button type="button" class="btn btn-link" onclick="window.open('Alarm1.csv')">Download<img src="download.png" style="width:25px;height:25px;"></button> 
 
 
 </div>
@@ -557,8 +548,8 @@ chart7.render();
 				</thead>
 	<tbody>
 	<?Php 
-	 $f = fopen("Sheet1.csv", "r");
-	$fr = fread($f, filesize("Sheet1.csv"));
+	 $f = fopen("Alarm1.csv", "r");
+	$fr = fread($f, filesize("Alarm1.csv"));
 	fclose($f);
 	$lines = array();
 	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
