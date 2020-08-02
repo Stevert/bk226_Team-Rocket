@@ -3,7 +3,7 @@
 <?php
 //ini_set( "display_errors", 0); 
 require "PHPMailer-master/PHPMailerAutoload.php";
-require 'connect.inc.php';
+
 $cause = $_SESSION['cause'];
 
 $email=$_SESSION['email'];
