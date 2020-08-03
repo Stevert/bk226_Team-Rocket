@@ -9,7 +9,7 @@ def copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i):
   #head=['Timestamp'0, 'color1', 2'Component', 3'Reason for Alarm', \
   #'4Nature','5Sensor type','6Range', '7Alarm Occurence', '8Alarm Type', '9Location']
   time_csv.iloc[loc,0]=alarm_data.iloc[i]['TIME']
-  print(time_csv)
+  #print(time_csv)
   if actual_class in ['A','F', 'G']:
     time_csv.iloc[loc,1]='red'
   else:
@@ -60,10 +60,15 @@ def f():
   
 
   if os.path.exists('copy.csv'):
-    '''time_csv=pd.read_csv('copy.csv')
-    loc=time_csv.shape[0]'''
-    time_csv=pd.DataFrame(columns=head)
-    loc=0
+    time_csv=pd.read_csv('copy.csv')
+    time_csv.columns=head
+
+    if not time_csv.empty:
+      loc=time_csv.shape[0]
+
+    else:
+      time_csv=pd.DataFrame(columns=head)
+      loc=0
   else:
     time_csv=pd.DataFrame(columns=head)
     loc=0
@@ -177,12 +182,35 @@ def f():
     #print(time_csv)
     #print(loc)
     time_csv.to_csv('copy.csv',index=False) 
-    #print(time_csv)
-    if i==200:
-      print(time_csv)
-      break
 
+    #print(time_csv)
+    
+    c=pd.read_csv('copy.csv')
+    #pd.read_excel('Alarm Reasons.xlsx')
+    c=c.groupby('Reason for Alarm').count()
+    c=pd.DataFrame(c.iloc[:,1]).reset_index()
+    c.columns=['Reason','Count']
+    c=c.sort_values('Count', ascending=False)
+    c.to_csv('freq1.csv',index=False)
+
+
+
+    c=pd.read_csv('copy.csv')
+    #pd.read_excel('Alarm Reasons.xlsx')
+    c=c.groupby('Alarm Type').count()
+    c=pd.DataFrame(c.iloc[:,1]).reset_index()
+    c.columns=['Type','Count']
+    c=c.sort_values('Count', ascending=False)
+    c.to_csv('freq2.csv',index=False)
+
+    cols=[1,2,3,4,18,19,20]
+    sim=pd.DataFrame(alarm_data.iloc[i,cols].values.reshape(1,7),columns=alarm_data.columns[cols])
+    sim.to_csv('simulation.csv',index=False)
     time.sleep(5)
+    '''if(i==50):
+      print(time_csv)
+      break'''
+
 
 f()
     
