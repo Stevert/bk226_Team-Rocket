@@ -99,7 +99,7 @@
 									$_SESSION['name']='Chinmayee';
 								}
 								if($email=='1998.abhishek.kalgutkar@gmail.com'){
-									$_SESSION['des']='Admiistrator';
+									$_SESSION['des']='Administrator';
 									$_SESSION['name']='Abhishek';
 								}
 								if($email=='2016.stevert.lobo@ves.ac.in'){
