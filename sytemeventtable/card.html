@@ -1,5 +1,7 @@
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 body {
   font-family: Arial;
@@ -177,33 +179,33 @@ body {
         <div class="cell">
             <div class="element">
       
-              <div class="symbol">Count</div>
+              <div class="symbol" id="tank">Count</div>
               <div class="at_details">Tank Level</div>
             </div>
           </div>
     <div class="cell">
       <div class="element">
 
-        <div class="symbol">Count</div>
+        <div class="symbol" id="ipt">Count</div>
         <div class="at_details">S1 Input Pressure</div>
       </div>
     </div> <div class="cell">
         <div class="element">
   
-          <div class="symbol">Count</div>
+          <div class="symbol" id=opt>Count</div>
           <div class="at_details">S1 Output Pressure</div>
         </div>
       </div>
       <div class="cell">
         <div class="element">
   
-          <div class="symbol">Count</div>
+          <div class="symbol" id=opf>Count</div>
           <div class="at_details">S1 Output FLow</div>
         </div>
       </div>
     <div class="cell">
       <div class="element">
-        <div class="symbol">Count</div>
+        <div class="symbol" id='temp'>Count</div>
         <div class="at_details">Temperature</div>
       </div>
     </div>
@@ -214,27 +216,27 @@ body {
   <div class="periodic-row", style="margin-left: 180;">
     <div class="cell">
       <div class="element">
-        <div class="symbol">Count</div>
-        <div class="at_details">actual alarm</div>
+        <div class="symbol" id=actual>Count</div>
+        <div class="at_details" >actual alarm</div>
       </div>
     </div>
     <div class="cell">
       <div class="element">
 
-        <div class="symbol">Count</div>
-        <div class="at_details">predicted alarm</div>
+        <div class="symbol" id=predicted>Count</div>
+        <div class="at_details" >predicted alarm</div>
       </div>
     </div>
     <div class="cell">
       <div class="element">
 
-        <div class="symbol">Count</div>
+        <div class="symbol" id=fp>Count</div>
         <div class="at_details">false positive</div>
       </div>
     </div>
     <div class="cell">
       <div class="element">
-        <div class="symbol">Count </div>
+        <div class="symbol" id=np>Count </div>
         <div class="at_details">False negative</div>
       </div>
     </div>
@@ -261,5 +263,68 @@ body {
             </ul>
 </div> -->
 </div>
+<script>
+  
+$(document).ready(function(){
+	var count=0;
+  var fp=0;
+  var fn=0;
+  var names=["tank","ipt","opt","opf","temp","actual","predicted","fp","np"]
+  //var reasons=
+  setInterval(function(){ 
+    $.ajax({
+      type: "GET",
+   url:'sim2.csv',
+   dataType:'text',
+   success:function(data)
+   {
+    console.log(data);
+    var data = data.split(/\r?\n|\r/);
+    var last=data.length-2;
+    var cell_data = data[last].split(',');
+    for (cell_count=0; cell_count<cell_data.length; cell_count++) {
+      x=document.getElementById(names[cell_count]);
+      if(cell_count<cell_data.length-2)
+          x.innerHTML=cell_data[cell_count]
+      else{
+        if (cell_data[cell_count]==="I")
+          x.innerHTML="Input Pump Malfunction";
+
+        if (cell_data[cell_count]==="Z")
+          x.innerHTML="Normal";
+        
+        if (cell_data[cell_count]==="A")
+          x.innerHTML="Pump Malfunction";
+        if (cell_data[cell_count]==="C")
+          x.innerHTML="low tank level";
+          if (cell_data[cell_count]==="E")
+          x.innerHTML="High  Pump1 pressure";
+          if (cell_data[cell_count]==="D")
+          x.innerHTML="Low output flow";
+          if (cell_data[cell_count]==="F")
+          x.innerHTML="Pump may Trip";
+          if (cell_data[cell_count]==="G")
+          x.innerHTML="Pump tripped";
+          if (cell_data[cell_count]==="H")
+          x.innerHTML="Pump restart";
+}
+    }
+    cell_count=cell_data.length;
+    
+    if(cell_data[cell_count-2]==='Z' && cell_data[cell_count-1]!=='Z')
+      fp=fp+1;
+    if(cell_data[cell_count-1]==='Z' && cell_data[cell_count-2]!=='Z')
+      fp=fn+1;
+      x=document.getElementById(names[cell_count]);
+      x.innerHTML=fp;
+      x=document.getElementById(names[cell_count+1]);
+      x.innerHTML=fn  ;
+   }
+   
+  });
+ },5000);
+});
+</script>
+
 </body>
 </html>

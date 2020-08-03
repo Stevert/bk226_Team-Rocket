@@ -143,7 +143,7 @@ table_data +='3.  Conitnuously monitor the condition at all stations.<br>"';
 table_data +='4.  Tighten the valves to maintain gas flow"<br>"';	
 table_data +='</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>';  */
 	$("#myTable tbody").prepend(table_data);      
-	/* count=count+1; */   
+	//count=count+1;    
    }
    
   });
