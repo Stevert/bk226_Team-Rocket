@@ -111,9 +111,9 @@ function myFunction() {
 </script></header>
  <main class="pt-5 mx-lg-5">
 <body >
-	<h1 style="text-align: center; font-size:80; font-family:Arial;">Documentation</h1>
+	<h2 style="text-align: center; font-size:80; font-family:Arial;">System design</h2>
 	<h5 style="text-align: center; font-size:40;font-family:Arial;">Pipleline Design</h5>
-<img src= "images/case.jpeg" class="center">
+<img src= "images/case.png" class="center">
 <div>
 	<h5 style="text-align: center; font-size:40; font-family:Arial;">Alarm categorization</h5>
 	<ol >
