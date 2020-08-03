@@ -229,9 +229,7 @@ if (strpos($cells[8], "Critical")!==false){
 	<div class="container">
 	<div class="card-header " >
 		<h3 class="card-title" style="font-family:Arial;">Real Time Alarms</h3></div>
-
 		<div class="table-responsive-sm table table-hover" id="myTable">
-
 			<table class="scrolldown">
 				<thead style="border-color :#5aa7a7;">
 				  <tr>
@@ -321,10 +319,10 @@ if (($h = fopen("{$filename}", "r")) !== FALSE)
 {
   // Each line in the file is converted into an individual array that we call $data
   // The items of the array are comma separated
-  while (($data = fgetcsv($h, 1000, ",")) !== FALSE) 
+  while (($data1 = fgetcsv($h, 1000, ",")) !== FALSE) 
   {
     // Each individual array is being pushed into the nested array
-    $the_big_array[] = $data;		
+    $the_big_array[] = $data1;		
   }
 
   // Close the file
@@ -449,29 +447,9 @@ array_push($d,$subarray);
 array_shift($d);
 ?>  
 <script>
-
-
  window.onload = function() {
 	
-	function fetch_copy(){
-	var rowCount = $('#copy tr').length;
-	$.ajax({  
-    type: 'GET',
-    url: 'copy.php',
-	cache: false, 
-    data: { length: rowCount },
-    success: function(response) {
-        for(i=0,i<response.length:)
-		console.log(response);
-    }
-	});
-	}
-	setInterval(function(){
-		fetch_copy();
-		}, 5000);
-	
-	
-	fetch_copy();
+ 
 	CanvasJS.addColorSet("greenShades",
                 [//colorSet Array
 
@@ -776,6 +754,8 @@ array_shift($d);
 
 	
 </div></main></body>
+
+
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
