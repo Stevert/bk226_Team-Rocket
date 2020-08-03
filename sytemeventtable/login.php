@@ -118,7 +118,7 @@
 									if(isset ($_SESSION['name'])&& !empty($_SESSION['des'])&& isset ($_SESSION['email'])&& !empty($_SESSION['email']))
 									{
 										
-										header('Location:documentation.html');	
+										header('Location:documentation.php');	
 										
 									}
 									else
