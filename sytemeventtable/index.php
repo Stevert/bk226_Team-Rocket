@@ -102,8 +102,56 @@
 .sticky + .content {
   padding-top: 60px;
 	
+}</style>
+
+
+
+
+<script>
+$(document).ready(function(){
+	var count=0;
+  setInterval(function(){ 
+    $.ajax({
+      type: "GET",
+   url:'copy.csv',
+   dataType:'text',
+   success:function(data)
+   {
+    console.log(data);
+    var data = data.split(/\r?\n|\r/);
+    var last=data.length-2;
+    var cell_data = data[last].split(',');
+    /* var rowCount = $('#myTable tr').length; */
+	for (cell_count=0; cell_count<cell_data.length; cell_count++) {
+
+		if(cell_count!=1 && cell_count!=8) 
+		table_data +="<td style='text-align:center';>"+cell_data[cell_count]+"</td>";
+		  if(cell_count!=8) {
+			table_data +="<td bgcolor='"+cell_data[1]+"' style=color:white;>"+cell_data[cell_count]+"</td>";
+		 	if (cell_data[cell_count].indexOf("Critical")!==-1) 
+			 table_data +='<td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal'+count+"a"+'">View</button></td>';
+			else
+			table_data += "<td></td>";
+		  }
 }
-    </style><body><header>
+table_data += "</tr>";
+table_data +='<div class="modal fade" id="myModal'+count+"a"+'" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Steps to follow:</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body">';
+table_data +='1.  Slow reduce the pump voltage to control pressure."<br>"'; 
+table_data +='2.  Losen the valves to prevent pressure increase.<br>"';
+table_data +='3.  Conitnuously monitor the condition at all stations.<br>"';
+table_data +='4.  Tighten the valves to maintain gas flow"<br>"';	
+table_data +='</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>';
+    $("#myTable tbody").prepend(table_data);         
+   }
+   ++count;
+  });
+ },5000);
+});
+</script>
+
+
+
+<body><header>
 		<div  id="navbar" >
 		<a class=" waves-effect" href="https://gailonline.com/CR-JoinGail.html">
                 <img src="images/gail.jpeg" height="40" width="45"alt="">
@@ -181,7 +229,15 @@ if (strpos($cells[8], "Critical")!==false){
 	<div class="container">
 	<div class="card-header " >
 		<h3 class="card-title" style="font-family:Arial;">Real Time Alarms</h3></div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+		<div class="table-responsive-sm table table-hover" id="myTable">
+=======
 		<div class="table-responsive-sm table table-hover" id="copy">
+>>>>>>> e60c840737268897ab6662c2836a903b97ace674
+=======
+		<div class="table-responsive-sm table table-hover" id="copy">
+>>>>>>> e60c840737268897ab6662c2836a903b97ace674
 			<table class="scrolldown">
 				<thead style="border-color :#5aa7a7;">
 				  <tr>
@@ -190,9 +246,10 @@ if (strpos($cells[8], "Critical")!==false){
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Reason for alarm</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Nature</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Sensor type</th>
-					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Value</th>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Range</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm occurrence</th> 
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm type</th>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Location</th> 
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;"> Action needed</th>           
 				  </tr>
 				</thead>
@@ -215,7 +272,6 @@ if (strpos($cells[8], "Critical")!==false){
 				  echo '<td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal'.$i.'">View</button>
 				  </td>';
 			else
-
 				  echo "<td></td>";
 		  }
 		}
@@ -246,8 +302,7 @@ if (strpos($cells[8], "Critical")!==false){
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			  </div>
 			</div>
-			
-		  </div>
+		 </div>
 		</div>
 	  ';
 		
