@@ -109,7 +109,6 @@
 
 <script>
 $(document).ready(function(){
-	var count=0;
   setInterval(function(){ 
     $.ajax({
       type: "GET",
@@ -117,8 +116,10 @@ $(document).ready(function(){
    dataType:'text',
    success:function(data)
    {
-    console.log(data);
-    var data = data.split(/\r?\n|\r/);
+	console.log(data);
+	/* var x=document.getElementById("testing1");
+	x.innerHTML=(parseInt(x.value) +1).toString(); */
+	var data = data.split(/\r?\n|\r/);
     var last=data.length-2;
     var cell_data = data[last].split(',');
 	var table_data='<tr>';
@@ -310,22 +311,12 @@ if (strpos($cells[8], "Critical")!==false){
 <?php
 
 $filename = 'freq1.csv';
-
-// The nested array to hold all the arrays
 $the_big_array = []; 
-
-// Open the file for reading
 if (($h = fopen("{$filename}", "r")) !== FALSE) 
-{
-  // Each line in the file is converted into an individual array that we call $data
-  // The items of the array are comma separated
-  while (($data1 = fgetcsv($h, 1000, ",")) !== FALSE) 
+{  while (($data1 = fgetcsv($h, 1000, ",")) !== FALSE) 
   {
-    // Each individual array is being pushed into the nested array
     $the_big_array[] = $data1;		
   }
-
-  // Close the file
   fclose($h);
 }
 
@@ -333,10 +324,11 @@ if (($h = fopen("{$filename}", "r")) !== FALSE)
 echo "<pre>";
 $c=0;
 $dataPoints=array();
+$rand_b=rand(-3,3);
 foreach($the_big_array as $row) {
     $subarray = array(
         "label" => $row[0],
-        "y" => floatval($row[1])
+        "y" => floatval($row[1]+$rand_b)
     );
 array_push($dataPoints,$subarray);
 }
@@ -347,23 +339,14 @@ array_shift($dataPoints);
 
 echo "</pre>";
 */
-$filename = 'freq2.csv';
-
-// The nested array to hold all the arrays
+$filename = 'freq2.csv'; 
 $the_array = []; 
-
-// Open the file for reading
 if (($h = fopen("{$filename}", "r")) !== FALSE) 
 {
-  // Each line in the file is converted into an individual array that we call $data
-  // The items of the array are comma separated
   while (($data = fgetcsv($h, 1000, ",")) !== FALSE) 
   {
-    // Each individual array is being pushed into the nested array
     $the_array[] = $data;		
   }
-
-  // Close the file
   fclose($h);
 }
 
@@ -371,10 +354,11 @@ if (($h = fopen("{$filename}", "r")) !== FALSE)
 echo "<pre>";
 $c=0;
 $dataP=array();
+$rand_a=rand(-3,3);
 foreach($the_array as $row) {
     $subarray = array(
         "label" => $row[0],
-        "y" => floatval($row[1])
+        "y" => floatval($row[1]+$rand_a)
     );
 array_push($dataP,$subarray);
 }
@@ -446,6 +430,7 @@ array_push($d,$subarray);
 }
 array_shift($d);
 ?>  
+
 <script>
  window.onload = function() { 
 	CanvasJS.addColorSet("greenShades",
@@ -538,17 +523,12 @@ array_shift($d);
          indexLabel: "{label} ({y})",
          dataPoints: <?php echo json_encode($d, JSON_NUMERIC_CHECK); ?>
      }]
-// Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-
-      
-    });
+});
 	lineChart2.render();
 }
  </script>
  
-
-      
-	  <div class="row wow fadeIn">
+  <div class="row wow fadeIn">
 
 	  <div class="col-lg-5 col-md-5 mb-4"><div class="card  mb-4" width="400" height="400" >
 	
@@ -578,9 +558,13 @@ array_shift($d);
 		echo "<tr>";
 		for($k=0;$k<count($cells);$k++)
 		{
-		  
-		  echo "<td>".$cells[$k]."</td>";
-		  
+		  if($k==1){
+			$cells[$k]=$cells[$k]+$rand_b;
+			echo "<td>".$cells[$k]."</td>";
+		  }
+		  else{
+			echo "<td>".$cells[$k]."</td>";
+		  }
 		}
 		// for k end
 		echo "</tr>";
@@ -627,9 +611,13 @@ array_shift($d);
 		echo "<tr>";
 		for($k=0;$k<count($cells);$k++)
 		{
-		  
-		  echo "<td>".$cells[$k]."</td>";
-		  
+		  if($k==1){
+			$cells[$k]=$cells[$k]+$rand_a;
+			echo "<td>".$cells[$k]."</td>";
+		  }
+		  else{
+			echo "<td>".$cells[$k]."</td>";
+		  }
 		}
 		// for k end
 		echo "</tr>";
