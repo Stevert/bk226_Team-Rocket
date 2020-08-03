@@ -14,45 +14,24 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.min.css" rel="stylesheet">
-    <style>
-        .panel{
-    width:70%;
-    padding-left:30%;
-    margin-top:60px;
-}
-.card{
-        width:20%;
-        height:50%;
-        margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-        margin-top:250px;
-        }
-body{
-  background-image: url('images/ffff.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-html {
-    height: 100%
-}
-nav{
-    background-color:#000000;
-    height:50px;
-}
-</style>
 </head>
+
+
 <?php
 	session_start();
 	ob_start();
-    ?>
+	?>
 
-<nav class="navbar navbar-dark bg-dark">
+    <!--Main Navigation-->
+
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
             <div class="container-fluid">
 
                 <!-- Brand -->
-                <a class="navbar-brand waves-effect" style="color:white;" href="https://gailonline.com/CR-JoinGail.html" target="_blank">
-				<img src="images/gail.png" class="img-fluid" alt="" height="40px;" width="50px;">Alarm management and Analytics System
+                <a class="navbar-brand waves-effect" href="https://gailonline.com/CR-JoinGail.html" target="_blank">
+				<img src="images/gail.png" class="img-fluid" alt="" height="50px;" width="50px;"><strong class="blue-text">Alarm management and Analytics System</strong>
                 </a>
 
                 <!-- Collapse -->
@@ -75,11 +54,23 @@ nav{
 
             </div>
         </nav>
-       
-        <body>
-<div class="card">
-<div class ="panel">
-<form  action="login.php" method="post">
+        <!-- Navbar -->
+
+        <!-- Sidebar -->
+        
+        <!-- Sidebar -->
+
+    
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+
+        
+                <!--Card content-->
+            
+				
+                    <!-- Default form login -->
+					<form  action="login.php" method="post">
 
 						<p class="h4 mb-4">Login</p>
 						<!-- Email -->
@@ -89,10 +80,8 @@ nav{
 						
 
 						<input type="submit" class="btn btn-info btn-block my-4" value="Sign In"/>
-                       </form>
-</div>
-</div>
-                       <?php
+					   </form>
+<?php
 					if (isset ($_POST['email'])&&isset ($_POST['password']))
 					{
 						//echo 'ok';
@@ -135,6 +124,23 @@ nav{
 									}
 								
 								}}
-                    ?>
-                    </body>
-						</html>
+					?>
+						
+<!-- Default form login -->
+
+            
+
+            
+            <!-- Heading -->
+
+
+            
+		
+    
+
+    <!--Main layout-->
+
+
+
+
+</html>
