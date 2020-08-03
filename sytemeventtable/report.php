@@ -626,14 +626,14 @@ chart7.render();
 
 		<div class="table-responsive-sm table table-hover">
 			<table class="scrolldown">
-				<thead style="border-color :#5aa7a7;">
+				<thead style="border-color :rgb(0,0,0,0.3);">
 				  <tr>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;" >TIME</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">Tank Level</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">S1 Input PT</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">S1 Output PT</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">S1 Output Flow</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">Temperature</th>              
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;" >TIME</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">Tank Level</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">S1 Input PT</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">S1 Output PT</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">S1 Output Flow</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">Temperature</th>              
 				  </tr>
 				</thead>
 	<tbody>
