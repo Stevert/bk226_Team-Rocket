@@ -1,41 +1,41 @@
 Timestamp,color,Component,Reason for Alarm,Nature,Sensor type,Range,Alarm Occurence,Alarm Type,Location
-41,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Mumbai
-41,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,51.1,1,Critical (Corelated),Mumbai
-41,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,270.63,1,Critical (Corelated),Solapur
-41,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,55.55,1,Critical (Corelated),Pune
-42,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Mumbai
-42,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,55.0,1,Critical (Corelated),Mumbai
-42,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,300.0,1,Critical (Corelated),Pune
-42,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,57.5,1,Critical (Corelated),Pune
-43,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Solapur
-43,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,60.0,1,Critical (Corelated),Solapur
-43,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,367.0,1,Critical (Corelated),Mumbai
-43,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,60.0,1,Critical (Corelated),Mumbai
-44,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Solapur
-44,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,72.13,1,Critical (Corelated),Pune
-44,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,376.0,1,Critical (Corelated),Mumbai
-44,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,66.06,1,Critical (Corelated),Solapur
-45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Mumbai
-45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,85.0,1,Critical (Corelated),Mumbai
-45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,424.18,1,Critical (Corelated),Pune
-45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,72.5,1,Critical (Corelated),Mumbai
-46,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Mumbai
-46,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,90.1,1,Critical (Corelated),Mumbai
-46,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,462.5,1,Critical (Corelated),Pune
-46,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,75.05,1,Critical (Corelated),Mumbai
-47,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Pune
-47,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,87.21,1,Critical (Corelated),Pune
-47,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,369.0,1,Critical (Corelated),Solapur
-47,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,73.6,1,Critical (Corelated),Solapur
-48,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Mumbai
-48,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,65.0,1,Critical (Corelated),Pune
-48,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,275.5,1,Critical (Corelated),Solapur
-48,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,62.5,1,Critical (Corelated),Solapur
-49,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Solapur
-49,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,59.0,1,Critical (Corelated),Solapur
-49,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,268.0,1,Critical (Corelated),Mumbai
-49,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,59.5,1,Critical (Corelated),Mumbai
-117,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,179.32,1,Alert,Mumbai
-118,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,175.78,1,Alert,Mumbai
-119,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,169.81,1,Alert,Pune
-120,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,189.08,1,Alert,Solapur
+2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Pune
+2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,51.1,1,Critical (Corelated),Pune
+2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,270.63,1,Critical (Corelated),Pune
+2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,55.55,1,Critical (Corelated),Mumbai
+2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Solapur
+2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,55.0,1,Critical (Corelated),Solapur
+2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,300.0,1,Critical (Corelated),Solapur
+2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,57.5,1,Critical (Corelated),Pune
+2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Mumbai
+2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,60.0,1,Critical (Corelated),Solapur
+2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,367.0,1,Critical (Corelated),Mumbai
+2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,60.0,1,Critical (Corelated),Solapur
+2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Mumbai
+2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,72.13,1,Critical (Corelated),Pune
+2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,376.0,1,Critical (Corelated),Mumbai
+2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,66.06,1,Critical (Corelated),Solapur
+2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Solapur
+2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,85.0,1,Critical (Corelated),Pune
+2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,424.18,1,Critical (Corelated),Mumbai
+2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,72.5,1,Critical (Corelated),Solapur
+2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Solapur
+2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,90.1,1,Critical (Corelated),Pune
+2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,462.5,1,Critical (Corelated),Pune
+2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,75.05,1,Critical (Corelated),Mumbai
+2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Mumbai
+2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,87.21,1,Critical (Corelated),Pune
+2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,369.0,1,Critical (Corelated),Mumbai
+2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,73.6,1,Critical (Corelated),Pune
+2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Solapur
+2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,65.0,1,Critical (Corelated),Pune
+2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,275.5,1,Critical (Corelated),Pune
+2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,62.5,1,Critical (Corelated),Solapur
+2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Pune
+2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,59.0,1,Critical (Corelated),Mumbai
+2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,268.0,1,Critical (Corelated),Mumbai
+2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,59.5,1,Critical (Corelated),Pune
+2020-07-15 00:09:45,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,179.32,1,Alert,Mumbai
+2020-07-15 00:09:50,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,175.78,1,Alert,Solapur
+2020-07-15 00:09:55,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,169.81,1,Alert,Solapur
+2020-07-15 00:10:00,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,189.08,1,Alert,Pune

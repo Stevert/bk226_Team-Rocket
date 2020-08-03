@@ -52,6 +52,7 @@
 			  font-family: Arial;
 			} 
     </style>
+	
 	<div class="container-fluid mt-5">
 	<div class="card">
  <div class="card-header text-center " height="400" >
@@ -100,7 +101,7 @@ if (strpos($cells[8], "Critical")!==false){
 	<div class="container">
 	<div class="card-header " >
 		<h3 class="card-title" style="font-family:Arial;">Real Time Alarms</h3></div>
-		<div class="table-responsive-sm table table-hover">
+		<div class="table-responsive-sm table table-hover" id="copy">
 			<table class="scrolldown">
 				<thead style="border-color :#5aa7a7;">
 				  <tr>
@@ -320,9 +321,29 @@ array_push($d,$subarray);
 array_shift($d);
 ?>  
 <script>
+
+
  window.onload = function() {
 	
- 
+	function fetch_copy(){
+	var rowCount = $('#copy tr').length;
+	$.ajax({  
+    type: 'GET',
+    url: 'copy.php',
+	cache: false, 
+    data: { length: rowCount },
+    success: function(response) {
+        for(i=0,i<response.length:)
+		console.log(response);
+    }
+	});
+	}
+	setInterval(function(){
+		fetch_copy();
+		}, 5000);
+	
+	
+	fetch_copy();
 	CanvasJS.addColorSet("greenShades",
                 [//colorSet Array
 

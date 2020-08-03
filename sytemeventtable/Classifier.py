@@ -8,8 +8,8 @@ def copy_update(alarm_data,time_csv,reason_csv,loc,sensor,actual_class,i):
   #print(type(loc),loc)
   #head=['Timestamp'0, 'color1', 2'Component', 3'Reason for Alarm', \
   #'4Nature','5Sensor type','6Range', '7Alarm Occurence', '8Alarm Type', '9Location']
-  time_csv.iloc[loc,0]=alarm_data.iloc[i,0]
-  #print(time_csv)
+  time_csv.iloc[loc,0]=alarm_data.iloc[i]['TIME']
+  print(time_csv)
   if actual_class in ['A','F', 'G']:
     time_csv.iloc[loc,1]='red'
   else:
@@ -178,7 +178,9 @@ def f():
     #print(loc)
     time_csv.to_csv('copy.csv',index=False) 
     #print(time_csv)
-    
+    if i==200:
+      print(time_csv)
+      break
 
     time.sleep(5)
 
