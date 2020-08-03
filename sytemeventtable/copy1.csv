@@ -1,192 +1,752 @@
 Timestamp,color,Component,Reason for Alarm,Nature,Sensor type,Range,Alarm Occurence,Alarm Type,Location
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,60.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,59.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:09:45,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,179.32,1.0,Alert,Mumbai
-2020-07-15 00:09:50,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,175.78,1.0,Alert,Solapur
-2020-07-15 00:09:55,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,169.81,1.0,Alert,Solapur
-2020-07-15 00:10:00,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,189.08,1.0,Alert,Pune
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,51.1,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,270.63,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,55.55,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,55.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,300.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,57.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,60.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,367.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,60.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,72.13,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,376.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,66.06,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,85.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,424.18,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,72.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,90.1,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,462.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,75.05,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,87.21,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,369.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,73.6,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,65.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,275.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,62.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,59.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,268.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,59.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,51.1,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,270.63,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,55.55,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,55.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,300.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,57.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,60.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,367.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,60.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,72.13,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,376.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,66.06,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,85.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,424.18,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,72.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,90.1,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,462.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,75.05,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,87.21,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,369.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,73.6,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,65.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,275.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,62.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,59.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,268.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,59.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,51.1,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,270.63,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:25,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,55.55,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,55.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,300.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:30,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,57.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,60.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,367.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,60.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,72.13,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,376.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:40,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,66.06,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,85.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,424.18,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:45,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,72.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,90.1,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,462.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,75.05,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,87.21,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,369.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,73.6,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,65.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,275.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,62.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,59.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,268.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,59.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:25,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:25,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,51.1,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:25,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,270.63,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:25,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,55.55,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:30,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:30,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,55.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:30,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,300.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:30,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,57.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:35,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:35,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,60.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:35,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,367.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:35,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,60.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:40,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,72.13,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,376.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:40,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,66.06,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:45,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:45,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,85.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:45,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,424.18,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:45,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,72.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:50,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:50,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,90.1,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:50,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,462.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:50,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,75.05,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,87.21,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:55,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,369.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,73.6,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:00,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:00,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,65.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,275.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,62.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:05,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:05,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,59.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:05,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,268.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:04:05,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,59.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:09:45,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,179.32,1.0,Alert,Solapur
-2020-07-15 00:09:50,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,175.78,1.0,Alert,Mumbai
-2020-07-15 00:09:55,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,169.81,1.0,Alert,Pune
-2020-07-15 00:10:00,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,189.08,1.0,Alert,Solapur
-2020-07-15 00:03:25,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:25,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,51.1,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:25,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,270.63,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:25,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,55.55,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:30,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:30,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,55.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:30,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,300.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:30,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,57.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:35,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:35,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,60.0,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:35,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,367.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:35,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,60.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:40,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,72.13,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:40,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,376.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:40,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,66.06,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:45,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:45,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,85.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:45,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,424.18,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:45,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,72.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:50,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:50,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,90.1,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:50,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,462.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:03:50,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,75.05,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,87.21,1.0,Critical (Corelated),Solapur
-2020-07-15 00:03:55,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,369.0,1.0,Critical (Corelated),Pune
-2020-07-15 00:03:55,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,73.6,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,65.0,1.0,Critical (Corelated),Solapur
-2020-07-15 00:04:00,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,275.5,1.0,Critical (Corelated),Mumbai
-2020-07-15 00:04:00,red,Station 1,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,62.5,1.0,Critical (Corelated),Pune
+2020-07-15 0:00:00,white,-,-,-,S1 Output PT,51.09,1,-,Solapur
+2020-07-15 0:00:00,white,-,-,-,S1 Output Flow,270.3,1,-,Mumbai
+2020-07-15 0:00:00,white,-,-,-,Temperature,55.54,1,-,Solapur
+2020-07-15 0:00:05,white,-,-,-,S1 Output PT,51.09,1,-,Solapur
+2020-07-15 0:00:05,white,-,-,-,S1 Output Flow,270.3,1,-,Mumbai
+2020-07-15 0:00:05,white,-,-,-,Temperature,55.54,1,-,Pune
+2020-07-15 0:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Pune
+2020-07-15 0:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,90.1,1,Critical (Corelated),Solapur
+2020-07-15 0:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,462.5,1,Critical (Corelated),Solapur
+2020-07-15 0:03:50,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,75.05,1,Critical (Corelated),Mumbai
+2020-07-15 0:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Solapur
+2020-07-15 0:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,87.21,1,Critical (Corelated),Mumbai
+2020-07-15 0:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,369.0,1,Critical (Corelated),Pune
+2020-07-15 0:03:55,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,73.6,1,Critical (Corelated),Mumbai
+2020-07-15 0:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.5,1,Critical (Corelated),Pune
+2020-07-15 0:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,65.0,1,Critical (Corelated),Mumbai
+2020-07-15 0:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,275.5,1,Critical (Corelated),Pune
+2020-07-15 0:04:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,62.5,1,Critical (Corelated),Solapur
+2020-07-15 0:09:40,white,-,-,-,S1 Output PT,51.09,1,-,Solapur
+2020-07-15 0:09:40,white,-,-,-,S1 Output Flow,202.41,1,-,Solapur
+2020-07-15 0:09:40,white,-,-,-,Temperature,55.54,1,-,Solapur
+2020-07-15 0:09:45,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,179.32,1,Alert,Solapur
+2020-07-15 0:09:50,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,175.78,1,Alert,Solapur
+2020-07-15 0:09:55,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,169.81,1,Alert,Solapur
+2020-07-15 0:10:00,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,189.08,1,Alert,Pune
+2020-07-15 0:39:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,81.09,1,Critical (Corelated),Solapur
+2020-07-15 0:39:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,70.54,1,Critical (Corelated),Mumbai
+2020-07-15 0:39:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,86.3,1,Critical (Corelated),Pune
+2020-07-15 0:39:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,73.15,1,Critical (Corelated),Pune
+2020-07-15 0:39:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,94.29,1,Critical (Corelated),Pune
+2020-07-15 0:39:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,77.14,1,Critical (Corelated),Pune
+2020-07-15 0:39:15,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 0:39:15,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 0:39:15,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,30.0,1,Critical (Corelated),Pune
+2020-07-15 0:39:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,24.3,1,Alert,Solapur
+2020-07-15 0:39:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,0.0,1,Alert,Pune
+2020-07-15 0:39:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,35.3,1,Alert,Mumbai
+2020-07-15 0:39:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,182.03,1,Alert,Pune
+2020-07-15 0:39:30,white,-,-,-,S1 Output PT,46.8,1,-,Mumbai
+2020-07-15 0:39:30,white,-,-,-,S1 Output Flow,227.7,1,-,Mumbai
+2020-07-15 0:39:30,white,-,-,-,Temperature,53.4,1,-,Solapur
+2020-07-15 0:42:50,white,-,-,-,S1 Output PT,61.48,1,-,Pune
+2020-07-15 0:42:50,white,-,-,-,S1 Output Flow,247.37,1,-,Mumbai
+2020-07-15 0:42:50,white,-,-,-,Temperature,55.71,1,-,Solapur
+2020-07-15 0:42:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,63.15,1,Critical (Corelated),Pune
+2020-07-15 0:42:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,56.49,1,Critical (Corelated),Pune
+2020-07-15 0:43:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,68.28,1,Critical (Corelated),Pune
+2020-07-15 0:43:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,58.91,1,Critical (Corelated),Mumbai
+2020-07-15 0:43:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,76.32,1,Critical (Corelated),Solapur
+2020-07-15 0:43:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,62.72,1,Critical (Corelated),Pune
+2020-07-15 0:43:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,81.23,1,Critical (Corelated),Solapur
+2020-07-15 0:43:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,65.03,1,Critical (Corelated),Pune
+2020-07-15 0:43:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,88.75,1,Critical (Corelated),Solapur
+2020-07-15 0:43:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,68.58,1,Critical (Corelated),Pune
+2020-07-15 0:43:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 0:43:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,26.67,1,Critical (Corelated),Solapur
+2020-07-15 0:43:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,22.87,1,Critical (Corelated),Solapur
+2020-07-15 0:43:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Pune
+2020-07-15 0:43:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,37.47,1,Critical (Corelated),Pune
+2020-07-15 0:43:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,33.22,1,Alert,Mumbai
+2020-07-15 0:43:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,168.5,1,Alert,Pune
+2020-07-15 0:43:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,44.05,1,Alert,Pune
+2020-07-15 0:43:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,210.78,1,Alert,Pune
+2020-07-15 0:43:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,46.82,1,Alert,Pune
+2020-07-15 0:43:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,247.03,1,Alert,Pune
+2020-07-15 0:43:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,49.1,1,Alert,Solapur
+2020-07-15 0:43:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,247.03,1,Alert,Pune
+2020-07-15 0:43:50,white,-,-,-,S1 Output PT,52.82,1,-,Mumbai
+2020-07-15 0:43:50,white,-,-,-,S1 Output Flow,334.63,1,-,Pune
+2020-07-15 0:43:50,white,-,-,-,Temperature,57.86,1,-,Pune
+2020-07-15 0:44:55,white,-,-,-,S1 Output PT,61.92,1,-,Mumbai
+2020-07-15 0:44:55,white,-,-,-,S1 Output Flow,323.55,1,-,Solapur
+2020-07-15 0:44:55,white,-,-,-,Temperature,62.79,1,-,Pune
+2020-07-15 0:45:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,63.6,1,Critical (Corelated),Solapur
+2020-07-15 0:45:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,63.67,1,Critical (Corelated),Mumbai
+2020-07-15 0:45:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,68.76,1,Critical (Corelated),Mumbai
+2020-07-15 0:45:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,66.41,1,Critical (Corelated),Mumbai
+2020-07-15 0:45:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,23.03,1,Critical (Corelated),Mumbai
+2020-07-15 0:45:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Solapur
+2020-07-15 0:45:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,42.24,1,Critical (Corelated),Mumbai
+2020-07-15 0:45:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,33.46,1,Alert,Pune
+2020-07-15 0:45:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,220.39,1,Alert,Solapur
+2020-07-15 0:45:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,44.36,1,Alert,Solapur
+2020-07-15 0:45:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,275.69,1,Alert,Mumbai
+2020-07-15 0:45:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,47.15,1,Alert,Pune
+2020-07-15 0:45:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,323.1,1,Alert,Solapur
+2020-07-15 0:46:00,white,-,-,-,S1 Output PT,49.46,1,-,Solapur
+2020-07-15 0:46:00,white,-,-,-,S1 Output Flow,323.38,1,-,Pune
+2020-07-15 0:46:00,white,-,-,-,Temperature,56.2,1,-,Mumbai
+2020-07-15 0:46:05,white,-,-,-,S1 Output PT,49.46,1,-,Solapur
+2020-07-15 0:46:05,white,-,-,-,S1 Output Flow,323.38,1,-,Solapur
+2020-07-15 0:46:05,white,-,-,-,Temperature,56.2,1,-,Solapur
+2020-07-15 0:46:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,100.91,1,Critical (Corelated),Pune
+2020-07-15 0:46:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,71.69,1,Critical (Corelated),Mumbai
+2020-07-15 0:47:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,107.4,1,Critical (Corelated),Mumbai
+2020-07-15 0:47:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,74.33,1,Critical (Corelated),Pune
+2020-07-15 0:47:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,117.34,1,Critical (Corelated),Pune
+2020-07-15 0:47:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,78.39,1,Critical (Corelated),Pune
+2020-07-15 0:47:10,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,0.0,1,Critical (Corelated),Pune
+2020-07-15 0:47:10,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Pune
+2020-07-15 0:47:10,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,30.48,1,Critical (Corelated),Solapur
+2020-07-15 0:47:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,30.24,1,Alert,Solapur
+2020-07-15 0:47:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,0.0,1,Alert,Mumbai
+2020-07-15 0:47:50,white,-,-,-,S1 Output PT,59.08,1,-,Solapur
+2020-07-15 0:47:50,white,-,-,-,S1 Output Flow,253.75,1,-,Pune
+2020-07-15 0:47:50,white,-,-,-,Temperature,58.08,1,-,Solapur
+2020-07-15 0:47:55,white,-,-,-,S1 Output PT,64.0,1,-,Solapur
+2020-07-15 0:47:55,white,-,-,-,S1 Output Flow,254.03,1,-,Solapur
+2020-07-15 0:47:55,white,-,-,-,Temperature,60.51,1,-,Mumbai
+2020-07-15 0:48:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,65.74,1,Critical (Corelated),Mumbai
+2020-07-15 0:48:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,61.36,1,Critical (Corelated),Pune
+2020-07-15 0:48:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,71.08,1,Critical (Corelated),Solapur
+2020-07-15 0:48:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,63.99,1,Critical (Corelated),Mumbai
+2020-07-15 0:48:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,79.45,1,Critical (Corelated),Mumbai
+2020-07-15 0:48:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,68.12,1,Critical (Corelated),Solapur
+2020-07-15 0:48:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,23.81,1,Critical (Corelated),Mumbai
+2020-07-15 0:48:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 0:48:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,40.7,1,Critical (Corelated),Solapur
+2020-07-15 0:48:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,34.59,1,Alert,Mumbai
+2020-07-15 0:48:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,173.04,1,Alert,Pune
+2020-07-15 0:48:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,45.86,1,Alert,Solapur
+2020-07-15 0:48:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,216.45,1,Alert,Solapur
+2020-07-15 0:48:50,white,-,-,-,S1 Output PT,51.78,1,-,Solapur
+2020-07-15 0:48:50,white,-,-,-,S1 Output Flow,291.07,1,-,Pune
+2020-07-15 0:48:50,white,-,-,-,Temperature,52.24,1,-,Solapur
+2020-07-15 0:50:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,59.18,1,Critical (Corelated),Solapur
+2020-07-15 0:50:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,59.67,1,Critical (Corelated),Solapur
+2020-07-15 0:50:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,63.99,1,Critical (Corelated),Mumbai
+2020-07-15 0:50:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,62.23,1,Critical (Corelated),Pune
+2020-07-15 0:50:10,white,-,-,-,S1 Output PT,44.05,1,-,Pune
+2020-07-15 0:50:10,white,-,-,-,S1 Output Flow,277.23,1,-,Pune
+2020-07-15 0:50:10,white,-,-,-,Temperature,51.89,1,-,Mumbai
+2020-07-15 0:50:15,white,-,-,-,S1 Output PT,44.05,1,-,Mumbai
+2020-07-15 0:50:15,white,-,-,-,S1 Output Flow,277.23,1,-,Pune
+2020-07-15 0:50:15,white,-,-,-,Temperature,51.89,1,-,Pune
+2020-07-15 0:50:50,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,56.64,1,Critical (Corelated),Mumbai
+2020-07-15 0:50:50,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,58.79,1,Critical (Corelated),Solapur
+2020-07-15 0:50:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,61.24,1,Critical (Corelated),Pune
+2020-07-15 0:50:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,61.31,1,Critical (Corelated),Mumbai
+2020-07-15 0:51:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,0.0,1,Critical (Corelated),Solapur
+2020-07-15 0:51:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,27.76,1,Critical (Corelated),Mumbai
+2020-07-15 0:51:20,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,20.52,1,Critical (Corelated),Pune
+2020-07-15 0:51:20,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Pune
+2020-07-15 0:51:20,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,39.0,1,Critical (Corelated),Solapur
+2020-07-15 0:51:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,29.8,1,Alert,Pune
+2020-07-15 0:51:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,188.77,1,Alert,Solapur
+2020-07-15 0:51:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,39.51,1,Alert,Solapur
+2020-07-15 0:51:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,236.13,1,Alert,Pune
+2020-07-15 0:51:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,41.99,1,Alert,Pune
+2020-07-15 0:51:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,276.74,1,Alert,Mumbai
+2020-07-15 0:51:50,white,-,-,-,S1 Output PT,44.05,1,-,Solapur
+2020-07-15 0:51:50,white,-,-,-,S1 Output Flow,276.98,1,-,Pune
+2020-07-15 0:51:50,white,-,-,-,Temperature,51.89,1,-,Mumbai
+2020-07-15 0:52:25,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,151.88,1,Alert,Solapur
+2020-07-15 0:52:30,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,152.35,1,Alert,Pune
+2020-07-15 0:52:35,white,-,-,-,S1 Output PT,61.92,1,-,Pune
+2020-07-15 0:52:35,white,-,-,-,S1 Output Flow,270.23,1,-,Pune
+2020-07-15 0:52:35,white,-,-,-,Temperature,55.07,1,-,Pune
+2020-07-15 0:52:40,white,-,-,-,S1 Output PT,61.92,1,-,Solapur
+2020-07-15 0:52:40,white,-,-,-,S1 Output Flow,270.23,1,-,Pune
+2020-07-15 0:52:40,white,-,-,-,Temperature,55.07,1,-,Pune
+2020-07-15 0:53:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,71.56,1,Critical (Corelated),Mumbai
+2020-07-15 0:53:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,59.06,1,Critical (Corelated),Pune
+2020-07-15 0:53:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,77.52,1,Critical (Corelated),Mumbai
+2020-07-15 0:53:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,61.52,1,Critical (Corelated),Pune
+2020-07-15 0:53:15,white,-,-,-,S1 Output PT,45.74,1,-,Pune
+2020-07-15 0:53:15,white,-,-,-,S1 Output Flow,286.06,1,-,Solapur
+2020-07-15 0:53:15,white,-,-,-,Temperature,55.57,1,-,Solapur
+2020-07-15 0:53:20,white,-,-,-,S1 Output PT,45.74,1,-,Solapur
+2020-07-15 0:53:20,white,-,-,-,S1 Output Flow,286.06,1,-,Pune
+2020-07-15 0:53:20,white,-,-,-,Temperature,55.57,1,-,Mumbai
+2020-07-15 0:53:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,58.8,1,Critical (Corelated),Mumbai
+2020-07-15 0:53:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,62.96,1,Critical (Corelated),Mumbai
+2020-07-15 0:54:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,63.58,1,Critical (Corelated),Solapur
+2020-07-15 0:54:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,65.66,1,Critical (Corelated),Pune
+2020-07-15 0:54:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,71.08,1,Critical (Corelated),Pune
+2020-07-15 0:54:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,69.89,1,Critical (Corelated),Pune
+2020-07-15 0:54:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,21.3,1,Critical (Corelated),Mumbai
+2020-07-15 0:54:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Pune
+2020-07-15 0:54:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,41.76,1,Critical (Corelated),Pune
+2020-07-15 0:54:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,30.94,1,Alert,Mumbai
+2020-07-15 0:54:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,194.78,1,Alert,Pune
+2020-07-15 0:54:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,41.02,1,Alert,Solapur
+2020-07-15 0:54:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,243.65,1,Alert,Solapur
+2020-07-15 0:54:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,43.6,1,Alert,Solapur
+2020-07-15 0:54:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,285.55,1,Alert,Mumbai
+2020-07-15 0:54:45,white,-,-,-,S1 Output PT,46.39,1,-,Pune
+2020-07-15 0:54:45,white,-,-,-,S1 Output Flow,292.72,1,-,Pune
+2020-07-15 0:54:45,white,-,-,-,Temperature,54.84,1,-,Solapur
+2020-07-15 0:55:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,59.65,1,Critical (Corelated),Solapur
+2020-07-15 0:55:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,62.12,1,Critical (Corelated),Mumbai
+2020-07-15 0:55:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,83.84,1,Critical (Corelated),Pune
+2020-07-15 0:55:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,75.42,1,Critical (Corelated),Solapur
+2020-07-15 0:55:50,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,0.0,1,Critical (Corelated),Solapur
+2020-07-15 0:55:50,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,29.33,1,Critical (Corelated),Solapur
+2020-07-15 0:55:55,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,21.61,1,Critical (Corelated),Pune
+2020-07-15 0:55:55,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Solapur
+2020-07-15 0:55:55,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,41.21,1,Critical (Corelated),Pune
+2020-07-15 0:56:00,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,31.39,1,Alert,Pune
+2020-07-15 0:56:00,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,199.32,1,Alert,Solapur
+2020-07-15 0:56:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,46.39,1,Alert,Pune
+2020-07-15 0:56:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,292.2,1,Alert,Pune
+2020-07-15 0:56:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,46.39,1,Alert,Solapur
+2020-07-15 0:56:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,292.43,1,Alert,Solapur
+2020-07-15 0:56:25,white,-,-,-,S1 Output PT,46.39,1,-,Pune
+2020-07-15 0:56:25,white,-,-,-,S1 Output Flow,292.45,1,-,Pune
+2020-07-15 0:56:25,white,-,-,-,Temperature,54.84,1,-,Mumbai
+2020-07-15 0:56:30,white,-,-,-,S1 Output PT,46.39,1,-,Solapur
+2020-07-15 0:56:30,white,-,-,-,S1 Output Flow,292.45,1,-,Mumbai
+2020-07-15 0:56:30,white,-,-,-,Temperature,54.84,1,-,Solapur
+2020-07-15 0:57:00,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,21.78,1,Critical (Corelated),Mumbai
+2020-07-15 0:57:00,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 0:57:00,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,42.52,1,Critical (Corelated),Solapur
+2020-07-15 0:57:05,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,31.64,1,Alert,Mumbai
+2020-07-15 0:57:05,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,196.19,1,Alert,Pune
+2020-07-15 0:57:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,41.94,1,Alert,Mumbai
+2020-07-15 0:57:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,245.41,1,Alert,Pune
+2020-07-15 0:57:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,44.58,1,Alert,Mumbai
+2020-07-15 0:57:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,287.62,1,Alert,Pune
+2020-07-15 0:57:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,46.75,1,Alert,Pune
+2020-07-15 0:57:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,287.62,1,Alert,Mumbai
+2020-07-15 0:57:30,white,-,-,-,S1 Output PT,46.76,1,-,Solapur
+2020-07-15 0:57:30,white,-,-,-,S1 Output Flow,287.87,1,-,Mumbai
+2020-07-15 0:57:30,white,-,-,-,Temperature,56.59,1,-,Pune
+2020-07-15 0:58:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,49.59,1,Alert,Pune
+2020-07-15 0:58:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,279.51,1,Alert,Mumbai
+2020-07-15 0:58:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,49.59,1,Alert,Mumbai
+2020-07-15 0:58:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,279.73,1,Alert,Mumbai
+2020-07-15 0:58:20,white,-,-,-,S1 Output PT,49.6,1,-,Solapur
+2020-07-15 0:58:20,white,-,-,-,S1 Output Flow,279.75,1,-,Mumbai
+2020-07-15 0:58:20,white,-,-,-,Temperature,51.64,1,-,Solapur
+2020-07-15 0:59:30,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,81.25,1,Critical (Corelated),Mumbai
+2020-07-15 0:59:30,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,66.91,1,Critical (Corelated),Mumbai
+2020-07-15 0:59:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,88.01,1,Critical (Corelated),Pune
+2020-07-15 0:59:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,69.7,1,Critical (Corelated),Solapur
+2020-07-15 0:59:40,white,-,-,-,S1 Output PT,52.18,1,-,Mumbai
+2020-07-15 0:59:40,white,-,-,-,S1 Output Flow,291.64,1,-,Pune
+2020-07-15 0:59:40,white,-,-,-,Temperature,53.16,1,-,Solapur
+2020-07-15 0:59:45,white,-,-,-,S1 Output PT,52.18,1,-,Mumbai
+2020-07-15 0:59:45,white,-,-,-,S1 Output Flow,291.64,1,-,Solapur
+2020-07-15 0:59:45,white,-,-,-,Temperature,53.16,1,-,Solapur
+2020-07-15 1:00:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,67.29,1,Critical (Corelated),Mumbai
+2020-07-15 1:00:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,62.78,1,Critical (Corelated),Mumbai
+2020-07-15 1:01:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,94.57,1,Critical (Corelated),Solapur
+2020-07-15 1:01:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,76.22,1,Critical (Corelated),Solapur
+2020-07-15 1:01:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,0.0,1,Critical (Corelated),Pune
+2020-07-15 1:01:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,29.64,1,Critical (Corelated),Solapur
+2020-07-15 1:01:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,24.37,1,Critical (Corelated),Mumbai
+2020-07-15 1:01:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Pune
+2020-07-15 1:01:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,41.64,1,Critical (Corelated),Pune
+2020-07-15 1:01:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,35.41,1,Alert,Solapur
+2020-07-15 1:01:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,228.43,1,Alert,Mumbai
+2020-07-15 1:01:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,46.94,1,Alert,Solapur
+2020-07-15 1:01:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,285.74,1,Alert,Solapur
+2020-07-15 1:01:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,49.89,1,Alert,Pune
+2020-07-15 1:01:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,334.88,1,Alert,Pune
+2020-07-15 1:01:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,52.33,1,Alert,Pune
+2020-07-15 1:01:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,334.88,1,Alert,Solapur
+2020-07-15 1:01:50,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,52.33,1,Alert,Pune
+2020-07-15 1:01:50,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,335.14,1,Alert,Pune
+2020-07-15 1:01:55,white,-,-,-,S1 Output PT,52.34,1,-,Solapur
+2020-07-15 1:01:55,white,-,-,-,S1 Output Flow,335.17,1,-,Mumbai
+2020-07-15 1:01:55,white,-,-,-,Temperature,55.42,1,-,Mumbai
+2020-07-15 1:02:00,white,-,-,-,S1 Output PT,52.34,1,-,Pune
+2020-07-15 1:02:00,white,-,-,-,S1 Output Flow,335.17,1,-,Mumbai
+2020-07-15 1:02:00,white,-,-,-,Temperature,55.42,1,-,Solapur
+2020-07-15 1:02:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,47.36,1,Alert,Mumbai
+2020-07-15 1:02:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,198.74,1,Alert,Solapur
+2020-07-15 1:02:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,62.79,1,Alert,Solapur
+2020-07-15 1:02:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,248.61,1,Alert,Pune
+2020-07-15 1:02:45,white,-,-,-,S1 Output PT,51.1,1,-,Pune
+2020-07-15 1:02:45,white,-,-,-,S1 Output Flow,295.39,1,-,Pune
+2020-07-15 1:02:45,white,-,-,-,Temperature,55.47,1,-,Solapur
+2020-07-15 1:03:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,79.41,1,Critical (Corelated),Mumbai
+2020-07-15 1:03:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,69.76,1,Critical (Corelated),Solapur
+2020-07-15 1:03:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,84.51,1,Critical (Corelated),Solapur
+2020-07-15 1:03:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,72.34,1,Critical (Corelated),Pune
+2020-07-15 1:03:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,92.33,1,Critical (Corelated),Pune
+2020-07-15 1:03:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,76.29,1,Critical (Corelated),Mumbai
+2020-07-15 1:03:55,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,23.8,1,Critical (Corelated),Mumbai
+2020-07-15 1:03:55,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 1:03:55,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,41.68,1,Critical (Corelated),Solapur
+2020-07-15 1:04:00,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,34.57,1,Alert,Mumbai
+2020-07-15 1:04:00,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,201.13,1,Alert,Mumbai
+2020-07-15 1:04:05,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,45.83,1,Alert,Solapur
+2020-07-15 1:04:05,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,251.6,1,Alert,Solapur
+2020-07-15 1:04:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,48.71,1,Alert,Solapur
+2020-07-15 1:04:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,294.87,1,Alert,Solapur
+2020-07-15 1:04:25,white,-,-,-,S1 Output PT,51.1,1,-,Mumbai
+2020-07-15 1:04:25,white,-,-,-,S1 Output Flow,295.12,1,-,Mumbai
+2020-07-15 1:04:25,white,-,-,-,Temperature,55.47,1,-,Mumbai
+2020-07-15 1:05:30,white,-,-,-,S1 Output PT,66.24,1,-,Solapur
+2020-07-15 1:05:30,white,-,-,-,S1 Output Flow,341.39,1,-,Pune
+2020-07-15 1:05:30,white,-,-,-,Temperature,65.13,1,-,Mumbai
+2020-07-15 1:05:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,68.03,1,Critical (Corelated),Pune
+2020-07-15 1:05:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,66.05,1,Critical (Corelated),Pune
+2020-07-15 1:05:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,73.56,1,Critical (Corelated),Mumbai
+2020-07-15 1:05:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,68.88,1,Critical (Corelated),Mumbai
+2020-07-15 1:06:05,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,24.64,1,Critical (Corelated),Solapur
+2020-07-15 1:06:05,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 1:06:05,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,43.81,1,Critical (Corelated),Mumbai
+2020-07-15 1:06:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,35.8,1,Alert,Mumbai
+2020-07-15 1:06:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,232.55,1,Alert,Solapur
+2020-07-15 1:06:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,47.46,1,Alert,Mumbai
+2020-07-15 1:06:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,290.89,1,Alert,Solapur
+2020-07-15 1:06:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,50.44,1,Alert,Mumbai
+2020-07-15 1:06:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,340.92,1,Alert,Solapur
+2020-07-15 1:06:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,52.9,1,Alert,Mumbai
+2020-07-15 1:06:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,340.92,1,Alert,Mumbai
+2020-07-15 1:06:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,52.9,1,Alert,Mumbai
+2020-07-15 1:06:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,341.19,1,Alert,Mumbai
+2020-07-15 1:06:35,white,-,-,-,S1 Output PT,52.91,1,-,Pune
+2020-07-15 1:06:35,white,-,-,-,S1 Output Flow,341.22,1,-,Pune
+2020-07-15 1:06:35,white,-,-,-,Temperature,58.3,1,-,Mumbai
+2020-07-15 1:07:40,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,6.02,1,Alert (correlated),Solapur
+2020-07-15 1:07:40,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,2.21,1,Alert (correlated),Mumbai
+2020-07-15 1:07:45,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,5.09,1,Alert (correlated),Pune
+2020-07-15 1:07:45,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,1.91,1,Alert (correlated),Pune
+2020-07-15 1:07:50,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,4.6,1,Alert (correlated),Pune
+2020-07-15 1:07:50,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,1.59,1,Alert (correlated),Solapur
+2020-07-15 1:07:55,white,-,-,-,S1 Output PT,52.07,1,-,Mumbai
+2020-07-15 1:07:55,white,-,-,-,S1 Output Flow,265.05,1,-,Pune
+2020-07-15 1:07:55,white,-,-,-,Temperature,67.25,1,-,Mumbai
+2020-07-15 1:08:00,white,-,-,-,S1 Output PT,52.08,1,-,Solapur
+2020-07-15 1:08:00,white,-,-,-,S1 Output Flow,265.07,1,-,Mumbai
+2020-07-15 1:08:00,white,-,-,-,Temperature,67.25,1,-,Solapur
+2020-07-15 1:08:15,white,-,-,-,S1 Output PT,52.08,1,-,Mumbai
+2020-07-15 1:08:15,white,-,-,-,S1 Output Flow,255.24,1,-,Mumbai
+2020-07-15 1:08:15,white,-,-,-,Temperature,67.25,1,-,Pune
+2020-07-15 1:08:20,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,249.37,1,Alert,Mumbai
+2020-07-15 1:08:25,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,225.91,1,Alert,Mumbai
+2020-07-15 1:08:45,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,173.09,1,Alert,Solapur
+2020-07-15 1:08:50,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,167.27,1,Alert,Pune
+2020-07-15 1:08:55,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,162.38,1,Alert,Solapur
+2020-07-15 1:09:00,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,162.88,1,Alert,Solapur
+2020-07-15 1:10:30,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,7.0,1,Alert (correlated),Pune
+2020-07-15 1:10:30,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,10.42,1,Alert (correlated),Pune
+2020-07-15 1:10:35,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,7.0,1,Alert (correlated),Solapur
+2020-07-15 1:10:35,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,2.41,1,Alert (correlated),Pune
+2020-07-15 1:10:40,white,-,-,-,S1 Output PT,49.19,1,-,Solapur
+2020-07-15 1:10:40,white,-,-,-,S1 Output Flow,227.89,1,-,Mumbai
+2020-07-15 1:10:40,white,-,-,-,Temperature,57.45,1,-,Pune
+2020-07-15 1:10:45,white,-,-,-,S1 Output PT,49.71,1,-,Pune
+2020-07-15 1:10:45,white,-,-,-,S1 Output Flow,279.93,1,-,Pune
+2020-07-15 1:10:45,white,-,-,-,Temperature,53.4,1,-,Mumbai
+2020-07-15 1:10:50,white,-,-,-,S1 Output PT,49.72,1,-,Mumbai
+2020-07-15 1:10:50,white,-,-,-,S1 Output Flow,279.95,1,-,Solapur
+2020-07-15 1:10:50,white,-,-,-,Temperature,53.4,1,-,Mumbai
+2020-07-15 1:10:55,white,-,-,-,S1 Output PT,49.72,1,-,Solapur
+2020-07-15 1:10:55,white,-,-,-,S1 Output Flow,279.95,1,-,Solapur
+2020-07-15 1:10:55,white,-,-,-,Temperature,53.4,1,-,Pune
+2020-07-15 1:11:30,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,185.15,1,Alert,Pune
+2020-07-15 1:11:35,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,181.46,1,Alert,Mumbai
+2020-07-15 1:11:40,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,175.22,1,Alert,Mumbai
+2020-07-15 1:11:45,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,169.99,1,Alert,Pune
+2020-07-15 1:11:50,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,170.52,1,Alert,Mumbai
+2020-07-15 1:11:55,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,178.49,1,Alert,Mumbai
+2020-07-15 1:13:30,white,-,-,-,S1 Output PT,40.67,1,-,Pune
+2020-07-15 1:13:30,white,-,-,-,S1 Output Flow,194.2,1,-,Pune
+2020-07-15 1:13:30,white,-,-,-,Temperature,45.89,1,-,Solapur
+2020-07-15 1:13:35,white,-,-,-,S1 Output PT,50.08,1,-,Pune
+2020-07-15 1:13:35,white,-,-,-,S1 Output Flow,250.95,1,-,Solapur
+2020-07-15 1:13:35,white,-,-,-,Temperature,57.26,1,-,Mumbai
+2020-07-15 1:14:10,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,5.42,1,Alert (correlated),Solapur
+2020-07-15 1:14:10,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,1.56,1,Alert (correlated),Mumbai
+2020-07-15 1:14:15,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,4.85,1,Alert (correlated),Mumbai
+2020-07-15 1:14:15,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,1.85,1,Alert (correlated),Pune
+2020-07-15 1:14:20,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,4.23,1,Alert (correlated),Solapur
+2020-07-15 1:14:20,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,1.44,1,Alert (correlated),Pune
+2020-07-15 1:14:25,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,4.15,1,Alert (correlated),Pune
+2020-07-15 1:14:25,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,1.5,1,Alert (correlated),Pune
+2020-07-15 1:14:30,yellow,Tank,low tank level,Decrease in input pressure,Tank Level,4.06,1,Alert (correlated),Solapur
+2020-07-15 1:14:30,yellow,Tank,low tank level,Decrease in input pressure,S1 Input PT,1.34,1,Alert (correlated),Solapur
+2020-07-15 1:15:00,white,-,-,-,S1 Output PT,79.27,1,-,Pune
+2020-07-15 1:15:00,white,-,-,-,S1 Output Flow,323.17,1,-,Mumbai
+2020-07-15 1:15:00,white,-,-,-,Temperature,70.72,1,-,Pune
+2020-07-15 1:15:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,84.2,1,Critical (Corelated),Mumbai
+2020-07-15 1:15:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,72.86,1,Critical (Corelated),Pune
+2020-07-15 1:15:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,91.21,1,Critical (Corelated),Mumbai
+2020-07-15 1:15:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,75.9,1,Critical (Corelated),Solapur
+2020-07-15 1:15:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,93.68,1,Critical (Corelated),Pune
+2020-07-15 1:15:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,76.97,1,Critical (Corelated),Solapur
+2020-07-15 1:15:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,101.29,1,Critical (Corelated),Mumbai
+2020-07-15 1:15:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,80.27,1,Critical (Corelated),Solapur
+2020-07-15 1:15:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,113.23,1,Critical (Corelated),Mumbai
+2020-07-15 1:15:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,85.45,1,Critical (Corelated),Solapur
+2020-07-15 1:15:30,white,-,-,-,S1 Output PT,43.96,1,-,Solapur
+2020-07-15 1:15:30,white,-,-,-,S1 Output Flow,285.31,1,-,Solapur
+2020-07-15 1:15:30,white,-,-,-,Temperature,53.8,1,-,Solapur
+2020-07-15 1:15:35,white,-,-,-,S1 Output PT,43.96,1,-,Pune
+2020-07-15 1:15:35,white,-,-,-,S1 Output Flow,285.31,1,-,Pune
+2020-07-15 1:15:35,white,-,-,-,Temperature,53.8,1,-,Solapur
+2020-07-15 1:15:40,white,-,-,-,S1 Output PT,43.96,1,-,Solapur
+2020-07-15 1:15:40,white,-,-,-,S1 Output Flow,285.59,1,-,Mumbai
+2020-07-15 1:15:40,white,-,-,-,Temperature,53.8,1,-,Pune
+2020-07-15 1:15:45,white,-,-,-,S1 Output PT,43.96,1,-,Mumbai
+2020-07-15 1:15:45,white,-,-,-,S1 Output Flow,285.59,1,-,Solapur
+2020-07-15 1:15:45,white,-,-,-,Temperature,53.8,1,-,Pune
+2020-07-15 1:15:50,white,-,-,-,S1 Output PT,43.95,1,-,Pune
+2020-07-15 1:15:50,white,-,-,-,S1 Output Flow,284.9,1,-,Solapur
+2020-07-15 1:15:50,white,-,-,-,Temperature,53.79,1,-,Pune
+2020-07-15 1:15:55,white,-,-,-,S1 Output PT,47.83,1,-,Mumbai
+2020-07-15 1:15:55,white,-,-,-,S1 Output Flow,284.9,1,-,Solapur
+2020-07-15 1:15:55,white,-,-,-,Temperature,56.0,1,-,Mumbai
+2020-07-15 1:16:00,white,-,-,-,S1 Output PT,50.8,1,-,Mumbai
+2020-07-15 1:16:00,white,-,-,-,S1 Output Flow,284.9,1,-,Pune
+2020-07-15 1:16:00,white,-,-,-,Temperature,57.69,1,-,Pune
+2020-07-15 1:16:05,white,-,-,-,S1 Output PT,55.03,1,-,Mumbai
+2020-07-15 1:16:05,white,-,-,-,S1 Output Flow,285.21,1,-,Pune
+2020-07-15 1:16:05,white,-,-,-,Temperature,60.1,1,-,Pune
+2020-07-15 1:16:40,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,20.47,1,Critical (Corelated),Solapur
+2020-07-15 1:16:40,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 1:16:40,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,40.43,1,Critical (Corelated),Pune
+2020-07-15 1:16:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,29.74,1,Alert,Mumbai
+2020-07-15 1:16:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,194.28,1,Alert,Mumbai
+2020-07-15 1:16:50,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,39.43,1,Alert,Mumbai
+2020-07-15 1:16:50,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,243.02,1,Alert,Pune
+2020-07-15 1:16:55,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,41.91,1,Alert,Solapur
+2020-07-15 1:16:55,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,284.81,1,Alert,Solapur
+2020-07-15 1:17:00,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,43.95,1,Alert,Pune
+2020-07-15 1:17:00,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,284.81,1,Alert,Mumbai
+2020-07-15 1:19:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,68.32,1,Critical (Corelated),Mumbai
+2020-07-15 1:19:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,64.32,1,Critical (Corelated),Pune
+2020-07-15 1:19:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,70.17,1,Critical (Corelated),Mumbai
+2020-07-15 1:19:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,65.22,1,Critical (Corelated),Pune
+2020-07-15 1:19:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,75.87,1,Critical (Corelated),Solapur
+2020-07-15 1:19:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,68.02,1,Critical (Corelated),Solapur
+2020-07-15 1:19:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,84.81,1,Critical (Corelated),Mumbai
+2020-07-15 1:19:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,72.41,1,Critical (Corelated),Mumbai
+2020-07-15 1:19:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,90.26,1,Critical (Corelated),Pune
+2020-07-15 1:19:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,75.08,1,Critical (Corelated),Solapur
+2020-07-15 1:20:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,124.96,1,Critical (Corelated),Pune
+2020-07-15 1:20:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,85.77,1,Critical (Corelated),Solapur
+2020-07-15 1:20:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,0.0,1,Critical (Corelated),Solapur
+2020-07-15 1:20:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 1:20:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,33.36,1,Critical (Corelated),Solapur
+2020-07-15 1:20:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,32.2,1,Alert,Solapur
+2020-07-15 1:20:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,0.0,1,Alert,Mumbai
+2020-07-15 1:20:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,46.78,1,Alert,Solapur
+2020-07-15 1:20:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,202.91,1,Alert,Pune
+2020-07-15 1:20:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,62.02,1,Alert,Pune
+2020-07-15 1:20:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,253.82,1,Alert,Pune
+2020-07-15 1:21:45,white,-,-,-,S1 Output PT,53.06,1,-,Solapur
+2020-07-15 1:21:45,white,-,-,-,S1 Output Flow,300.19,1,-,Mumbai
+2020-07-15 1:21:45,white,-,-,-,Temperature,60.37,1,-,Pune
+2020-07-15 1:21:50,white,-,-,-,S1 Output PT,56.36,1,-,Solapur
+2020-07-15 1:21:50,white,-,-,-,S1 Output Flow,300.19,1,-,Solapur
+2020-07-15 1:21:50,white,-,-,-,Temperature,62.2,1,-,Pune
+2020-07-15 1:21:55,white,-,-,-,S1 Output PT,61.05,1,-,Pune
+2020-07-15 1:21:55,white,-,-,-,S1 Output Flow,300.52,1,-,Solapur
+2020-07-15 1:21:55,white,-,-,-,Temperature,64.79,1,-,Mumbai
+2020-07-15 1:22:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,62.71,1,Critical (Corelated),Solapur
+2020-07-15 1:22:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,65.71,1,Critical (Corelated),Mumbai
+2020-07-15 1:22:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,67.8,1,Critical (Corelated),Mumbai
+2020-07-15 1:22:05,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,68.53,1,Critical (Corelated),Solapur
+2020-07-15 1:22:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,75.79,1,Critical (Corelated),Pune
+2020-07-15 1:22:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,72.95,1,Critical (Corelated),Solapur
+2020-07-15 1:22:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,80.66,1,Critical (Corelated),Mumbai
+2020-07-15 1:22:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,75.64,1,Critical (Corelated),Pune
+2020-07-15 1:22:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,88.13,1,Critical (Corelated),Solapur
+2020-07-15 1:22:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,79.77,1,Critical (Corelated),Mumbai
+2020-07-15 1:22:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,0.0,1,Critical (Corelated),Pune
+2020-07-15 1:22:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,31.02,1,Critical (Corelated),Mumbai
+2020-07-15 1:22:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,22.71,1,Critical (Corelated),Mumbai
+2020-07-15 1:22:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Pune
+2020-07-15 1:22:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,43.59,1,Critical (Corelated),Mumbai
+2020-07-15 1:22:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,32.99,1,Alert,Pune
+2020-07-15 1:22:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,204.7,1,Alert,Pune
+2020-07-15 1:22:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,43.74,1,Alert,Pune
+2020-07-15 1:22:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,256.06,1,Alert,Mumbai
+2020-07-15 1:22:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,46.49,1,Alert,Mumbai
+2020-07-15 1:22:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,300.1,1,Alert,Mumbai
+2020-07-15 1:27:25,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,244.19,1,Alert,Solapur
+2020-07-15 1:27:50,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,179.76,1,Alert,Solapur
+2020-07-15 1:27:55,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,174.39,1,Alert,Mumbai
+2020-07-15 1:28:00,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,174.94,1,Alert,Mumbai
+2020-07-15 1:28:05,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,183.11,1,Alert,Mumbai
+2020-07-15 1:29:30,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,S1 Output PT,28.3,1,Critical,Mumbai
+2020-07-15 1:29:30,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,Temperature,38.22,1,Critical,Pune
+2020-07-15 1:29:35,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,S1 Output PT,30.8,1,Critical,Mumbai
+2020-07-15 1:29:35,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,Temperature,39.44,1,Critical,Pune
+2020-07-15 1:29:40,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,S1 Output PT,32.31,1,Critical,Mumbai
+2020-07-15 1:29:40,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,Temperature,40.18,1,Critical,Mumbai
+2020-07-15 1:29:45,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,S1 Output PT,34.07,1,Critical,Mumbai
+2020-07-15 1:29:45,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,Temperature,41.04,1,Critical,Pune
+2020-07-15 1:29:50,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,S1 Output PT,35.83,1,Critical,Pune
+2020-07-15 1:29:50,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,Temperature,41.89,1,Critical,Mumbai
+2020-07-15 1:29:55,white,-,-,-,S1 Output PT,54.53,1,-,Pune
+2020-07-15 1:29:55,white,-,-,-,S1 Output Flow,263.85,1,-,Pune
+2020-07-15 1:29:55,white,-,-,-,Temperature,53.77,1,-,Mumbai
+2020-07-15 1:30:00,white,-,-,-,S1 Output PT,54.53,1,-,Solapur
+2020-07-15 1:30:00,white,-,-,-,S1 Output Flow,263.85,1,-,Mumbai
+2020-07-15 1:30:00,white,-,-,-,Temperature,53.77,1,-,Solapur
+2020-07-15 1:30:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.1,1,Critical (Corelated),Solapur
+2020-07-15 1:30:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,54.53,1,Critical (Corelated),Pune
+2020-07-15 1:30:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,264.11,1,Critical (Corelated),Mumbai
+2020-07-15 1:30:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,53.77,1,Critical (Corelated),Mumbai
+2020-07-15 1:32:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.1,1,Critical (Corelated),Pune
+2020-07-15 1:32:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,54.53,1,Critical (Corelated),Solapur
+2020-07-15 1:32:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,263.81,1,Critical (Corelated),Solapur
+2020-07-15 1:32:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,53.77,1,Critical (Corelated),Mumbai
+2020-07-15 1:32:10,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,6.59,1,Critical (Corelated),Pune
+2020-07-15 1:32:10,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,48.77,1,Critical (Corelated),Mumbai
+2020-07-15 1:32:10,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,196.53,1,Critical (Corelated),Solapur
+2020-07-15 1:32:10,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,46.71,1,Critical (Corelated),Pune
+2020-07-15 1:32:15,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,173.84,1,Alert,Pune
+2020-07-15 1:33:40,white,-,-,-,S1 Output PT,55.26,1,-,Pune
+2020-07-15 1:33:40,white,-,-,-,S1 Output Flow,263.17,1,-,Solapur
+2020-07-15 1:33:40,white,-,-,-,Temperature,48.14,1,-,Mumbai
+2020-07-15 1:33:45,white,-,-,-,S1 Output PT,55.26,1,-,Pune
+2020-07-15 1:33:45,white,-,-,-,S1 Output Flow,263.66,1,-,Mumbai
+2020-07-15 1:33:45,white,-,-,-,Temperature,48.14,1,-,Solapur
+2020-07-15 1:33:50,white,-,-,-,S1 Output PT,55.26,1,-,Solapur
+2020-07-15 1:33:50,white,-,-,-,S1 Output Flow,253.28,1,-,Solapur
+2020-07-15 1:33:50,white,-,-,-,Temperature,48.14,1,-,Pune
+2020-07-15 1:33:55,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,247.37,1,Alert,Solapur
+2020-07-15 1:34:00,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,223.76,1,Alert,Solapur
+2020-07-15 1:34:05,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,204.39,1,Alert,Pune
+2020-07-15 1:34:10,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,196.76,1,Alert,Solapur
+2020-07-15 1:35:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.1,1,Critical (Corelated),Solapur
+2020-07-15 1:35:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,52.75,1,Critical (Corelated),Pune
+2020-07-15 1:35:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,269.0,1,Critical (Corelated),Mumbai
+2020-07-15 1:35:35,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,53.1,1,Critical (Corelated),Solapur
+2020-07-15 1:35:55,white,-,-,-,S1 Output PT,66.03,1,-,Pune
+2020-07-15 1:35:55,white,-,-,-,S1 Output Flow,268.63,1,-,Solapur
+2020-07-15 1:35:55,white,-,-,-,Temperature,59.32,1,-,Pune
+2020-07-15 1:36:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.1,1,Critical (Corelated),Solapur
+2020-07-15 1:36:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,67.82,1,Critical (Corelated),Pune
+2020-07-15 1:36:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,273.58,1,Critical (Corelated),Solapur
+2020-07-15 1:36:00,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,60.15,1,Critical (Corelated),Solapur
+2020-07-15 1:36:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Tank Level,7.1,1,Critical (Corelated),Solapur
+2020-07-15 1:36:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output PT,73.33,1,Critical (Corelated),Solapur
+2020-07-15 1:36:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,S1 Output Flow,275.42,1,Critical (Corelated),Pune
+2020-07-15 1:36:05,red,Station 1 pump,Pump Malfunction,Sudden Increase in Pump Pressure,Temperature,62.73,1,Critical (Corelated),Mumbai
+2020-07-15 1:36:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,81.98,1,Critical (Corelated),Pune
+2020-07-15 1:36:10,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,66.78,1,Critical (Corelated),Solapur
+2020-07-15 1:36:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,87.24,1,Critical (Corelated),Solapur
+2020-07-15 1:36:15,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,69.25,1,Critical (Corelated),Solapur
+2020-07-15 1:36:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,95.32,1,Critical (Corelated),Solapur
+2020-07-15 1:36:20,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,73.03,1,Critical (Corelated),Solapur
+2020-07-15 1:36:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,0.0,1,Critical (Corelated),Solapur
+2020-07-15 1:36:25,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,28.4,1,Critical (Corelated),Pune
+2020-07-15 1:36:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,24.57,1,Critical (Corelated),Pune
+2020-07-15 1:36:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 1:36:30,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,39.9,1,Critical (Corelated),Mumbai
+2020-07-15 1:36:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,35.69,1,Alert,Mumbai
+2020-07-15 1:36:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,182.99,1,Alert,Mumbai
+2020-07-15 1:36:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,47.31,1,Alert,Solapur
+2020-07-15 1:36:40,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,228.9,1,Alert,Solapur
+2020-07-15 1:36:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,50.28,1,Alert,Solapur
+2020-07-15 1:36:45,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,268.26,1,Alert,Solapur
+2020-07-15 1:37:00,white,-,-,-,S1 Output PT,52.75,1,-,Mumbai
+2020-07-15 1:37:00,white,-,-,-,S1 Output Flow,268.49,1,-,Solapur
+2020-07-15 1:37:00,white,-,-,-,Temperature,53.1,1,-,Solapur
+2020-07-15 1:37:25,white,-,-,-,S1 Output PT,52.75,1,-,Solapur
+2020-07-15 1:37:25,white,-,-,-,S1 Output Flow,268.61,1,-,Pune
+2020-07-15 1:37:25,white,-,-,-,Temperature,53.1,1,-,Pune
+2020-07-15 1:37:30,white,-,-,-,S1 Output PT,52.75,1,-,Solapur
+2020-07-15 1:37:30,white,-,-,-,S1 Output Flow,268.69,1,-,Mumbai
+2020-07-15 1:37:30,white,-,-,-,Temperature,53.1,1,-,Pune
+2020-07-15 1:38:30,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,158.89,1,Alert,Pune
+2020-07-15 1:38:35,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,239.98,1,Alert,Pune
+2020-07-15 1:39:25,white,-,-,-,S1 Output PT,52.0,1,-,Mumbai
+2020-07-15 1:39:25,white,-,-,-,S1 Output Flow,278.85,1,-,Pune
+2020-07-15 1:39:25,white,-,-,-,Temperature,51.01,1,-,Mumbai
+2020-07-15 1:39:30,white,-,-,-,S1 Output PT,55.23,1,-,Mumbai
+2020-07-15 1:39:30,white,-,-,-,S1 Output Flow,278.85,1,-,Mumbai
+2020-07-15 1:39:30,white,-,-,-,Temperature,52.55,1,-,Solapur
+2020-07-15 1:39:35,white,-,-,-,S1 Output PT,59.83,1,-,Mumbai
+2020-07-15 1:39:35,white,-,-,-,S1 Output Flow,279.16,1,-,Mumbai
+2020-07-15 1:39:35,white,-,-,-,Temperature,54.74,1,-,Mumbai
+2020-07-15 1:39:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,61.45,1,Critical (Corelated),Pune
+2020-07-15 1:39:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,55.51,1,Critical (Corelated),Mumbai
+2020-07-15 1:39:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,66.44,1,Critical (Corelated),Mumbai
+2020-07-15 1:39:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,57.9,1,Critical (Corelated),Mumbai
+2020-07-15 1:40:10,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,22.26,1,Critical (Corelated),Mumbai
+2020-07-15 1:40:10,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Pune
+2020-07-15 1:40:10,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,36.82,1,Critical (Corelated),Pune
+2020-07-15 1:40:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,32.33,1,Alert,Mumbai
+2020-07-15 1:40:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,190.15,1,Alert,Solapur
+2020-07-15 1:40:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,42.87,1,Alert,Solapur
+2020-07-15 1:40:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,237.86,1,Alert,Solapur
+2020-07-15 1:40:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,45.56,1,Alert,Mumbai
+2020-07-15 1:40:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,278.77,1,Alert,Pune
+2020-07-15 1:40:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,47.78,1,Alert,Solapur
+2020-07-15 1:40:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,278.77,1,Alert,Mumbai
+2020-07-15 1:40:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,47.78,1,Alert,Mumbai
+2020-07-15 1:40:35,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,278.99,1,Alert,Solapur
+2020-07-15 1:41:00,white,-,-,-,S1 Output PT,47.79,1,-,Mumbai
+2020-07-15 1:41:00,white,-,-,-,S1 Output Flow,279.13,1,-,Mumbai
+2020-07-15 1:41:00,white,-,-,-,Temperature,49.0,1,-,Solapur
+2020-07-15 1:41:05,white,-,-,-,S1 Output PT,47.79,1,-,Mumbai
+2020-07-15 1:41:05,white,-,-,-,S1 Output Flow,279.13,1,-,Mumbai
+2020-07-15 1:41:05,white,-,-,-,Temperature,49.0,1,-,Mumbai
+2020-07-15 1:41:10,white,-,-,-,S1 Output PT,47.79,1,-,Pune
+2020-07-15 1:41:10,white,-,-,-,S1 Output Flow,279.22,1,-,Mumbai
+2020-07-15 1:41:10,white,-,-,-,Temperature,49.0,1,-,Solapur
+2020-07-15 1:41:15,white,-,-,-,S1 Output PT,82.35,1,-,Pune
+2020-07-15 1:41:15,white,-,-,-,S1 Output Flow,328.43,1,-,Pune
+2020-07-15 1:41:15,white,-,-,-,Temperature,71.11,1,-,Solapur
+2020-07-15 1:41:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,117.62,1,Critical (Corelated),Solapur
+2020-07-15 1:41:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,85.92,1,Critical (Corelated),Solapur
+2020-07-15 1:41:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,125.18,1,Critical (Corelated),Pune
+2020-07-15 1:41:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,89.1,1,Critical (Corelated),Solapur
+2020-07-15 1:41:50,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,136.77,1,Critical (Corelated),Pune
+2020-07-15 1:41:50,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,93.96,1,Critical (Corelated),Solapur
+2020-07-15 1:41:55,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,0.0,1,Critical (Corelated),Solapur
+2020-07-15 1:41:55,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Pune
+2020-07-15 1:41:55,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,36.54,1,Critical (Corelated),Solapur
+2020-07-15 1:42:00,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,35.25,1,Alert,Pune
+2020-07-15 1:42:00,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,0.0,1,Alert,Mumbai
+2020-07-15 1:42:05,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,51.2,1,Alert,Mumbai
+2020-07-15 1:42:05,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,223.96,1,Alert,Solapur
+2020-07-15 1:42:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,67.88,1,Alert,Pune
+2020-07-15 1:42:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,280.15,1,Alert,Mumbai
+2020-07-15 1:42:45,white,-,-,-,S1 Output PT,75.69,1,-,Pune
+2020-07-15 1:42:45,white,-,-,-,S1 Output Flow,329.48,1,-,Pune
+2020-07-15 1:42:45,white,-,-,-,Temperature,68.32,1,-,Mumbai
+2020-07-15 1:42:50,white,-,-,-,S1 Output PT,75.69,1,-,Solapur
+2020-07-15 1:42:50,white,-,-,-,S1 Output Flow,328.76,1,-,Solapur
+2020-07-15 1:42:50,white,-,-,-,Temperature,68.32,1,-,Solapur
+2020-07-15 1:42:55,white,-,-,-,S1 Output PT,75.69,1,-,Solapur
+2020-07-15 1:42:55,white,-,-,-,S1 Output Flow,328.76,1,-,Solapur
+2020-07-15 1:42:55,white,-,-,-,Temperature,68.32,1,-,Mumbai
+2020-07-15 1:43:00,white,-,-,-,S1 Output PT,75.69,1,-,Mumbai
+2020-07-15 1:43:00,white,-,-,-,S1 Output Flow,328.86,1,-,Mumbai
+2020-07-15 1:43:00,white,-,-,-,Temperature,68.32,1,-,Mumbai
+2020-07-15 1:43:15,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,1.33,1,Alert,Mumbai
+2020-07-15 1:43:20,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,1.12,1,Alert,Solapur
+2020-07-15 1:43:25,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,1.4,1,Alert,Mumbai
+2020-07-15 1:43:30,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,1.11,1,Alert,Solapur
+2020-07-15 1:43:45,white,-,-,-,S1 Output PT,55.24,1,-,Pune
+2020-07-15 1:43:45,white,-,-,-,S1 Output Flow,253.66,1,-,Solapur
+2020-07-15 1:43:45,white,-,-,-,Temperature,47.72,1,-,Pune
+2020-07-15 1:43:50,white,-,-,-,S1 Output PT,55.24,1,-,Pune
+2020-07-15 1:43:50,white,-,-,-,S1 Output Flow,254.12,1,-,Mumbai
+2020-07-15 1:43:50,white,-,-,-,Temperature,47.72,1,-,Mumbai
+2020-07-15 1:43:55,white,-,-,-,S1 Output PT,55.24,1,-,Solapur
+2020-07-15 1:43:55,white,-,-,-,S1 Output Flow,244.11,1,-,Mumbai
+2020-07-15 1:43:55,white,-,-,-,Temperature,47.72,1,-,Pune
+2020-07-15 1:44:40,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,154.51,1,Alert,Pune
+2020-07-15 1:44:45,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,161.72,1,Alert,Pune
+2020-07-15 1:44:50,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,167.19,1,Alert,Mumbai
+2020-07-15 1:44:55,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,254.32,1,Alert,Pune
+2020-07-15 1:45:00,white,-,-,-,S1 Output PT,59.32,1,-,Solapur
+2020-07-15 1:45:00,white,-,-,-,S1 Output Flow,253.77,1,-,Pune
+2020-07-15 1:45:00,white,-,-,-,Temperature,49.35,1,-,Solapur
+2020-07-15 1:45:05,white,-,-,-,S1 Output PT,55.24,1,-,Pune
+2020-07-15 1:45:05,white,-,-,-,S1 Output Flow,253.77,1,-,Mumbai
+2020-07-15 1:45:05,white,-,-,-,Temperature,47.72,1,-,Solapur
+2020-07-15 1:45:10,white,-,-,-,S1 Output PT,55.24,1,-,Mumbai
+2020-07-15 1:45:10,white,-,-,-,S1 Output Flow,253.85,1,-,Solapur
+2020-07-15 1:45:10,white,-,-,-,Temperature,47.72,1,-,Mumbai
+2020-07-15 1:45:35,yellow,Station 1,Low output flow,Gradual Decrease in flow,S1 Output Flow,9.79,1,Alert,Solapur
+2020-07-15 1:46:20,white,-,-,-,S1 Output PT,49.59,1,-,Solapur
+2020-07-15 1:46:20,white,-,-,-,S1 Output Flow,271.92,1,-,Pune
+2020-07-15 1:46:20,white,-,-,-,Temperature,50.16,1,-,Mumbai
+2020-07-15 1:46:25,white,-,-,-,S1 Output PT,52.68,1,-,Pune
+2020-07-15 1:46:25,white,-,-,-,S1 Output Flow,271.92,1,-,Mumbai
+2020-07-15 1:46:25,white,-,-,-,Temperature,51.68,1,-,Solapur
+2020-07-15 1:46:30,white,-,-,-,S1 Output PT,57.06,1,-,Solapur
+2020-07-15 1:46:30,white,-,-,-,S1 Output Flow,272.21,1,-,Pune
+2020-07-15 1:46:30,white,-,-,-,Temperature,53.84,1,-,Mumbai
+2020-07-15 1:46:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,58.61,1,Critical (Corelated),Solapur
+2020-07-15 1:46:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,54.6,1,Critical (Corelated),Pune
+2020-07-15 1:46:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,63.37,1,Critical (Corelated),Pune
+2020-07-15 1:46:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,56.94,1,Critical (Corelated),Pune
+2020-07-15 1:46:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,70.84,1,Critical (Corelated),Solapur
+2020-07-15 1:46:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,60.61,1,Critical (Corelated),Solapur
+2020-07-15 1:47:05,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,21.23,1,Critical (Corelated),Solapur
+2020-07-15 1:47:05,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Pune
+2020-07-15 1:47:05,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,36.21,1,Critical (Corelated),Pune
+2020-07-15 1:47:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,30.84,1,Alert,Pune
+2020-07-15 1:47:10,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,185.42,1,Alert,Pune
+2020-07-15 1:47:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,40.89,1,Alert,Mumbai
+2020-07-15 1:47:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,231.94,1,Alert,Pune
+2020-07-15 1:47:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,43.45,1,Alert,Pune
+2020-07-15 1:47:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,271.83,1,Alert,Mumbai
+2020-07-15 1:47:35,white,-,-,-,S1 Output PT,45.59,1,-,Mumbai
+2020-07-15 1:47:35,white,-,-,-,S1 Output Flow,272.07,1,-,Mumbai
+2020-07-15 1:47:35,white,-,-,-,Temperature,48.19,1,-,Pune
+2020-07-15 1:47:40,white,-,-,-,S1 Output PT,45.59,1,-,Solapur
+2020-07-15 1:47:40,white,-,-,-,S1 Output Flow,272.07,1,-,Mumbai
+2020-07-15 1:47:40,white,-,-,-,Temperature,48.19,1,-,Mumbai
+2020-07-15 1:47:45,white,-,-,-,S1 Output PT,45.59,1,-,Pune
+2020-07-15 1:47:45,white,-,-,-,S1 Output Flow,272.57,1,-,Pune
+2020-07-15 1:47:45,white,-,-,-,Temperature,48.19,1,-,Solapur
+2020-07-15 1:48:10,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,S1 Output PT,50.77,1,Critical,Mumbai
+2020-07-15 1:48:10,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,Temperature,56.76,1,Critical,Mumbai
+2020-07-15 1:48:15,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,S1 Output PT,48.34,1,Critical,Solapur
+2020-07-15 1:48:15,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,Temperature,55.48,1,Critical,Pune
+2020-07-15 1:48:40,white,-,-,-,S1 Output PT,48.34,1,-,Pune
+2020-07-15 1:48:40,white,-,-,-,S1 Output Flow,224.84,1,-,Mumbai
+2020-07-15 1:48:40,white,-,-,-,Temperature,55.48,1,-,Mumbai
+2020-07-15 1:48:45,white,-,-,-,S1 Output PT,48.34,1,-,Pune
+2020-07-15 1:48:45,white,-,-,-,S1 Output Flow,224.84,1,-,Pune
+2020-07-15 1:48:45,white,-,-,-,Temperature,55.48,1,-,Pune
+2020-07-15 1:48:50,white,-,-,-,S1 Output PT,48.34,1,-,Pune
+2020-07-15 1:48:50,white,-,-,-,S1 Output Flow,224.94,1,-,Mumbai
+2020-07-15 1:48:50,white,-,-,-,Temperature,55.48,1,-,Mumbai
+2020-07-15 1:48:55,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,S1 Output PT,31.57,1,Critical,Pune
+2020-07-15 1:48:55,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,Temperature,43.21,1,Critical,Solapur
+2020-07-15 1:49:00,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,S1 Output PT,30.68,1,Critical,Solapur
+2020-07-15 1:49:00,yellow,Station 1 Pump,Pump Malfunction,Pump operating at very low pressure,Temperature,42.77,1,Critical,Mumbai
+2020-07-15 1:49:05,white,-,-,-,S1 Output PT,54.33,1,-,Solapur
+2020-07-15 1:49:05,white,-,-,-,S1 Output Flow,257.72,1,-,Solapur
+2020-07-15 1:49:05,white,-,-,-,Temperature,52.82,1,-,Solapur
+2020-07-15 1:49:10,white,-,-,-,S1 Output PT,54.33,1,-,Solapur
+2020-07-15 1:49:10,white,-,-,-,S1 Output Flow,257.72,1,-,Solapur
+2020-07-15 1:49:10,white,-,-,-,Temperature,52.82,1,-,Mumbai
+2020-07-15 1:49:15,white,-,-,-,S1 Output PT,54.33,1,-,Pune
+2020-07-15 1:49:15,white,-,-,-,S1 Output Flow,257.97,1,-,Solapur
+2020-07-15 1:49:15,white,-,-,-,Temperature,52.82,1,-,Solapur
+2020-07-15 1:49:20,white,-,-,-,S1 Output PT,54.33,1,-,Mumbai
+2020-07-15 1:49:20,white,-,-,-,S1 Output Flow,257.97,1,-,Solapur
+2020-07-15 1:49:20,white,-,-,-,Temperature,52.82,1,-,Pune
+2020-07-15 1:49:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,62.79,1,Critical (Corelated),Mumbai
+2020-07-15 1:49:35,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,56.64,1,Critical (Corelated),Pune
+2020-07-15 1:49:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,68.02,1,Critical (Corelated),Mumbai
+2020-07-15 1:49:40,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,59.01,1,Critical (Corelated),Pune
+2020-07-15 1:49:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,69.86,1,Critical (Corelated),Pune
+2020-07-15 1:49:45,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,59.84,1,Critical (Corelated),Mumbai
+2020-07-15 1:49:50,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,75.53,1,Critical (Corelated),Pune
+2020-07-15 1:49:50,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,62.41,1,Critical (Corelated),Pune
+2020-07-15 1:50:10,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,0.0,1,Critical (Corelated),Pune
+2020-07-15 1:50:10,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Solapur
+2020-07-15 1:50:10,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,28.25,1,Critical (Corelated),Pune
+2020-07-15 1:50:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,25.3,1,Alert,Mumbai
+2020-07-15 1:50:15,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,0.0,1,Alert,Pune
+2020-07-15 1:50:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,36.76,1,Alert,Solapur
+2020-07-15 1:50:20,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,175.48,1,Alert,Solapur
+2020-07-15 1:50:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,48.73,1,Alert,Solapur
+2020-07-15 1:50:25,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,219.51,1,Alert,Mumbai
+2020-07-15 1:50:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output PT,51.79,1,Alert,Pune
+2020-07-15 1:50:30,yellow,Station 1 Pump,Pump restart,Recovery from a pump trip,S1 Output Flow,257.26,1,Alert,Pune
+2020-07-15 1:52:40,white,-,-,-,S1 Output PT,49.73,1,-,Pune
+2020-07-15 1:52:40,white,-,-,-,S1 Output Flow,275.46,1,-,Mumbai
+2020-07-15 1:52:40,white,-,-,-,Temperature,56.39,1,-,Pune
+2020-07-15 1:52:45,white,-,-,-,S1 Output PT,52.82,1,-,Mumbai
+2020-07-15 1:52:45,white,-,-,-,S1 Output Flow,275.46,1,-,Pune
+2020-07-15 1:52:45,white,-,-,-,Temperature,58.09,1,-,Pune
+2020-07-15 1:52:50,white,-,-,-,S1 Output PT,57.22,1,-,Pune
+2020-07-15 1:52:50,white,-,-,-,S1 Output Flow,275.76,1,-,Pune
+2020-07-15 1:52:50,white,-,-,-,Temperature,60.51,1,-,Solapur
+2020-07-15 1:52:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,58.77,1,Critical (Corelated),Mumbai
+2020-07-15 1:52:55,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,61.37,1,Critical (Corelated),Pune
+2020-07-15 1:53:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,S1 Output PT,63.54,1,Critical (Corelated),Solapur
+2020-07-15 1:53:00,red,Station 1 Pump,Pump may Trip,Pump pressure above operating range,Temperature,64.0,1,Critical (Corelated),Mumbai
+2020-07-15 1:53:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output PT,21.29,1,Critical (Corelated),Mumbai
+2020-07-15 1:53:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,S1 Output Flow,0.0,1,Critical (Corelated),Mumbai
+2020-07-15 1:53:25,red,Station 1 Pump,Pump tripped,Pump pressure suddenly drops to 0,Temperature,40.71,1,Critical (Corelated),Solapur
