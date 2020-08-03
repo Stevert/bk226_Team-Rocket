@@ -51,7 +51,135 @@
               font-size: 16px;
 			  font-family: Arial;
 			} 
-    </style>
+    	#navbar {
+  overflow: hidden;
+  background-color: #333;
+	z-index:1030;
+}
+
+#navbar a {
+  float: left;
+  display: inline;
+  color: #f2f2f2;
+  text-align: left;
+	padding-top:14px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar p {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: red;
+}
+#navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+
+.show {
+  display: block;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+	
+}</style>
+
+<?php session_start(); ?>
+
+
+<script>
+$(document).ready(function(){
+	var count=0;
+  setInterval(function(){ 
+    $.ajax({
+      type: "GET",
+   url:'copy.csv',
+   dataType:'text',
+   success:function(data)
+   {
+    console.log(data);
+    var data = data.split(/\r?\n|\r/);
+    var last=data.length-2;
+    var cell_data = data[last].split(',');
+    /* var rowCount = $('#myTable tr').length; */
+	for (cell_count=0; cell_count<cell_data.length; cell_count++) {
+
+		if(cell_count!=1 && cell_count!=8) 
+		table_data +="<td style='text-align:center';>"+cell_data[cell_count]+"</td>";
+		  if(cell_count!=8) {
+			table_data +="<td bgcolor='"+cell_data[1]+"' style=color:white;>"+cell_data[cell_count]+"</td>";
+		 	if (cell_data[cell_count].indexOf("Critical")!==-1) 
+			 table_data +='<td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal'+count+"a"+'">View</button></td>';
+			else
+			table_data += "<td></td>";
+		  }
+}
+table_data += "</tr>";
+table_data +='<div class="modal fade" id="myModal'+count+"a"+'" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Steps to follow:</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body">';
+table_data +='1.  Slow reduce the pump voltage to control pressure."<br>"'; 
+table_data +='2.  Losen the valves to prevent pressure increase.<br>"';
+table_data +='3.  Conitnuously monitor the condition at all stations.<br>"';
+table_data +='4.  Tighten the valves to maintain gas flow"<br>"';	
+table_data +='</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>';
+    $("#myTable tbody").prepend(table_data);         
+   }
+   ++count;
+  });
+ },5000);
+});
+</script>
+
+
+
+<body><header>
+		<div  id="navbar" >
+		<a class=" waves-effect" href="https://gailonline.com/CR-JoinGail.html">
+                <img src="images/gail.jpeg" height="40" width="45"alt="">
+            </a>
+		<a  href="documentation.php">Documentation</a>
+  <a href="mitigation.php">Mitigation</a>
+  <a href="report.php">Reports</a>
+	<a href="logout.php">Logout</a>
+	<p><?php echo $_SESSION['name'].', '. $_SESSION['des'];?></p>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script></header>
+ <main class="pt-5 mx-lg-5">
 	<div class="container-fluid mt-5">
 	<div class="card">
  <div class="card-header text-center " height="400" >
@@ -72,14 +200,17 @@
 	fclose($f);
 	$lines = array();
 	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of...
-	$cells = array(); 
-	$cells = explode(",",$lines[1]);
-
+	$cells = array();
+	$len= count($lines);
+	$cells = explode(",",$lines[$len-2]);
+	
 	?>
 <hr/>
 <?php
-if (strpos($cells[7], "Critical")!==false){ 
-	
+if (strpos($cells[8], "Critical")!==false){ 
+	#print_r($cells[8]);
+	$_SESSION['cause']=$cells[3];
+	require 'mailAdmin.php';
 	?>
 <div class="card"style="margin-top:5px;">
 <div class="container-fluid fixed-top ">
@@ -98,7 +229,7 @@ if (strpos($cells[7], "Critical")!==false){
 	<div class="container">
 	<div class="card-header " >
 		<h3 class="card-title" style="font-family:Arial;">Real Time Alarms</h3></div>
-		<div class="table-responsive-sm table table-hover">
+		<div class="table-responsive-sm table table-hover" id="myTable">
 			<table class="scrolldown">
 				<thead style="border-color :#5aa7a7;">
 				  <tr>
@@ -107,7 +238,7 @@ if (strpos($cells[7], "Critical")!==false){
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Reason for alarm</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Nature</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Sensor type</th>
-					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Value</th>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Range</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm occurrence</th> 
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm type</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;"> Action needed</th>           
@@ -116,7 +247,7 @@ if (strpos($cells[7], "Critical")!==false){
 	<tbody>
 	
 <?php
-	for($i=count($lines)-2;$i>=count($lines)-8;$i--)
+	for($i=count($lines)-2;$i>=1;$i--)
 	{
 		
 		$cells = array(); 
@@ -132,7 +263,6 @@ if (strpos($cells[7], "Critical")!==false){
 				  echo '<td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal'.$i.'">View</button>
 				  </td>';
 			else
-
 				  echo "<td></td>";
 		  }
 		}
@@ -163,8 +293,7 @@ if (strpos($cells[7], "Critical")!==false){
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			  </div>
 			</div>
-			
-		  </div>
+		 </div>
 		</div>
 	  ';
 		
@@ -190,10 +319,10 @@ if (($h = fopen("{$filename}", "r")) !== FALSE)
 {
   // Each line in the file is converted into an individual array that we call $data
   // The items of the array are comma separated
-  while (($data = fgetcsv($h, 1000, ",")) !== FALSE) 
+  while (($data1 = fgetcsv($h, 1000, ",")) !== FALSE) 
   {
     // Each individual array is being pushed into the nested array
-    $the_big_array[] = $data;		
+    $the_big_array[] = $data1;		
   }
 
   // Close the file
@@ -339,7 +468,7 @@ array_shift($d);
 		 fontFamily: "Arial"
      }],
      data: [{
-         type: "pie",
+         type: "column",
          indexLabel: "{label} ({y})",
          dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
      }]
@@ -359,7 +488,7 @@ array_shift($d);
 		 fontFamily: "Arial"
      }],
      data: [{
-         type: "pie",
+         type: "column",
          //yValueFormatString: "#,##0.00\"%\"",
          indexLabel: "{label} ({y})",
          dataPoints: <?php echo json_encode($dataP, JSON_NUMERIC_CHECK); ?>
@@ -422,13 +551,99 @@ array_shift($d);
  
       
 	  <div class="row wow fadeIn">
+
+	  <div class="col-lg-5 col-md-5 mb-4"><div class="card  mb-4" width="400" height="400" >
+	
+				<div class="card-header " >
+		<h3 class="card-title" style="font-family:Arial;">Frequency of alarms</h3></div>
+		<div class="table-responsive-sm table table-hover">
+			<table class="scrolldown">
+				<thead style="border-color :#5aa7a7;">
+				  <tr>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;" >Reason for alarm</th>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Frequency</th>
+					        
+				  </tr>
+				</thead>
+	<tbody>
+	<?Php 
+	$f = fopen("freq1.csv", "r");
+	$fr = fread($f, filesize("freq1.csv"));
+	fclose($f);
+	$lines = array();
+	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
+	
+	for($i=count($lines)-2;$i>0;$i--)
+	{
+		
+		$cells = array(); 
+		$cells = explode(",",$lines[$i]); // use the cell/row delimiter what u need!
+		echo "<tr>";
+		for($k=0;$k<count($cells);$k++)
+		{
+		  
+		  echo "<td>".$cells[$k]."</td>";
+		  
+		}
+		// for k end
+		echo "</tr>";
+	}
+	// for i end
+	/* echo "</table></body></html>"; */
+	?> 
+	
+	</tbody> 
+			  </table>
+		  </div></div></div>
                 <div class="col-lg-5 col-md-5 mb-4"><div class="card  mb-4" width="400" height="400" ><div class="card-header" >
                     <!--Card--><h3 class="card-title " style="font-family:Arial;">Frequency of alarms</h3>
 					</div>
                     <div class="card-body" >
     <div id="chartContainer1" style="height: 370px; width: 100%;"></div></div></div></div>
 	
-	<div class="col-lg-1 col-md-1 mb-1"></div>
+	<div class="col-lg-5 col-md-5 mb-4"><div class="card  mb-4" width="400" height="400" >
+	
+				<div class="card-header " >
+		<h3 class="card-title" style="font-family:Arial;">Classification of alarms</h3></div>
+		<div class="table-responsive-sm table table-hover">
+			<table class="scrolldown">
+				<thead style="border-color :#5aa7a7;">
+				  <tr>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;" >Status</th>
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Frequency</th>
+					        
+				  </tr>
+				</thead>
+	<tbody>
+	<?Php 
+	$f = fopen("freq2.csv", "r");
+	$fr = fread($f, filesize("freq2.csv"));
+	fclose($f);
+	$lines = array();
+	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
+	
+	for($i=count($lines)-2;$i>0;$i--)
+	{
+		
+		$cells = array(); 
+		$cells = explode(",",$lines[$i]); // use the cell/row delimiter what u need!
+		echo "<tr>";
+		for($k=0;$k<count($cells);$k++)
+		{
+		  
+		  echo "<td>".$cells[$k]."</td>";
+		  
+		}
+		// for k end
+		echo "</tr>";
+	}
+	// for i end
+	/* echo "</table></body></html>"; */
+	?> 
+	
+	</tbody> 
+			  </table>
+		  </div></div></div>
 	
 	<div class="col-lg-5 col-md-5 mb-4"><div class="card  mb-4" width="400" height="400" >
                     <!--Card--><div class="card-header" >
@@ -461,7 +676,7 @@ array_shift($d);
 	$lines = array();
 	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
 	
-	for($i=count($lines)-1;$i>=count($lines)-7;$i--)
+	for($i=count($lines)-2;$i>=count($lines)-7;$i--)
 	{
 		
 		$cells = array(); 
@@ -506,7 +721,7 @@ array_shift($d);
 	$lines = array();
 	$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of... 
 	
-	for($i=count($lines)-1;$i>=count($lines)-6;$i--)
+	for($i=count($lines)-2;$i>=count($lines)-6;$i--)
 	{
 		
 		$cells = array(); 
@@ -538,7 +753,9 @@ array_shift($d);
 
 
 	
-</div>
+</div></main></body>
+
+
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->

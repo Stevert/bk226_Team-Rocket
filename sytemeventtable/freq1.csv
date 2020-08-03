@@ -1,6 +1,3 @@
-﻿Reason for alarm,Frequency
-Pump malfuction,10
-high pressure,20
-low tank level,25
-Input Pump Malfunction,40
-
+Reason,Count
+Pump Malfunction,180
+Low output flow,8

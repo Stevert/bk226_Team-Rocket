@@ -1,0 +1,4 @@
+1.  Slow reduce the pump voltage to control pressure. 
+2.  Losen the valves to prevent pressure increase.
+3.  Conitnuously monitor the condition at all stations.
+4.  Tighten the valves to maintain gas flow

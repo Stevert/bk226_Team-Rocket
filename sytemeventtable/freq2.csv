@@ -1,4 +1,3 @@
-Status,Frequency
-Critical alert,30
-Alert,10
-Correlated,20
+Type,Count
+Critical (Corelated),180
+Alert,8

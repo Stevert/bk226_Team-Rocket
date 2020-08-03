@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>Report</title>
+<title>Dashboard</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -17,6 +17,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,7 +25,8 @@
 <html lang="en">
 	<style>
 
-		::-webkit-scrollbar {
+	
+::-webkit-scrollbar {
 	  display: none;
 	}
 			  table.scrolldown { 
@@ -51,8 +53,87 @@
               font-size: 16px;
 			  font-family: Arial;
 			} 
-    </style>
+			#navbar {
+  overflow: hidden;
+  background-color: #333;
+	z-index:1030;
+}
 
+#navbar a {
+  float: left;
+  display: inline;
+  color: #f2f2f2;
+  text-align: left;
+	padding-top:14px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar p {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: red;
+}
+#navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+
+.show {
+  display: block;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+	
+}
+    </style><body><header>
+		<div  id="navbar" >
+		<a class=" waves-effect" href="https://gailonline.com/CR-JoinGail.html">
+                <img src="images/gail.jpeg" height="40" width="45"alt="">
+            </a>
+		<a  href="documentation.php">Documentation</a>
+  <a href="mitigation.php">Mitigation</a>
+  <a href="index.php">Dashboard</a>
+	<a href="logout.php">Logout</a>
+	<p><?php session_start(); echo $_SESSION['name'].', '. $_SESSION['des'];?></p>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script></header>
+ <main class="pt-5 mx-lg-5">
 
 
 
@@ -545,14 +626,14 @@ chart7.render();
 
 		<div class="table-responsive-sm table table-hover">
 			<table class="scrolldown">
-				<thead style="border-color :#5aa7a7;">
+				<thead style="border-color :rgb(0,0,0,0.3);">
 				  <tr>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;" >TIME</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">Tank Level</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">S1 Input PT</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">S1 Output PT</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">S1 Output Flow</th>
-					<th style="text-align:center;background-color:rgb(90, 167, 167,0.7);color:white;">Temperature</th>              
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;" >TIME</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">Tank Level</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">S1 Input PT</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">S1 Output PT</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">S1 Output Flow</th>
+					<th style="text-align:center;background-color:rgb(0,0,0,0.3);color:white;">Temperature</th>              
 				  </tr>
 				</thead>
 	<tbody>
@@ -594,7 +675,7 @@ chart7.render();
 
 
 	
-</div>
+</div></main></body>
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
