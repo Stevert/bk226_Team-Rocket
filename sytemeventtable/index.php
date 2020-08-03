@@ -230,7 +230,11 @@ if (strpos($cells[8], "Critical")!==false){
 	<div class="card-header " >
 		<h3 class="card-title" style="font-family:Arial;">Real Time Alarms</h3></div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<div class="table-responsive-sm table table-hover" id="myTable">
+=======
+		<div class="table-responsive-sm table table-hover" id="copy">
+>>>>>>> e60c840737268897ab6662c2836a903b97ace674
 =======
 		<div class="table-responsive-sm table table-hover" id="copy">
 >>>>>>> e60c840737268897ab6662c2836a903b97ace674
