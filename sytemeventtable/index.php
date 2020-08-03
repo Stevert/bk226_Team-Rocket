@@ -121,13 +121,12 @@ $(document).ready(function(){
     var data = data.split(/\r?\n|\r/);
     var last=data.length-2;
     var cell_data = data[last].split(',');
-    /* var rowCount = $('#myTable tr').length; */
-	for (cell_count=0; cell_count<cell_data.length; cell_count++) {
-
+	var table_data='<tr>';
+	for (cell_count=0; cell_count<cell_data.length-1; cell_count++) {
 		if(cell_count!=1 && cell_count!=8) 
-		table_data +="<td style='text-align:center';>"+cell_data[cell_count]+"</td>";
-		  if(cell_count!=8) {
-			table_data +="<td bgcolor='"+cell_data[1]+"' style=color:white;>"+cell_data[cell_count]+"</td>";
+		 table_data +="<td style='text-align:center'; class="+cell_data[3]+">"+cell_data[cell_count]+"</td>";
+		  if(cell_count==8) {
+			table_data +="<td bgcolor='"+cell_data[1]+"' class="+cell_data[3]+">"+cell_data[cell_count]+"</td>";
 		 	if (cell_data[cell_count].indexOf("Critical")!==-1) 
 			 table_data +='<td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal'+count+"a"+'">View</button></td>';
 			else
@@ -135,15 +134,16 @@ $(document).ready(function(){
 		  }
 }
 table_data += "</tr>";
-table_data +='<div class="modal fade" id="myModal'+count+"a"+'" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Steps to follow:</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body">';
-table_data +='1.  Slow reduce the pump voltage to control pressure."<br>"'; 
+ /* table_data +='<div class="modal fade" id="myModal'+count+"a"+'" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Steps to follow:</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body">'; */
+/*table_data +='1.  Slow reduce the pump voltage to control pressure."<br>"'; 
 table_data +='2.  Losen the valves to prevent pressure increase.<br>"';
 table_data +='3.  Conitnuously monitor the condition at all stations.<br>"';
 table_data +='4.  Tighten the valves to maintain gas flow"<br>"';	
-table_data +='</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>';
-    $("#myTable tbody").prepend(table_data);         
+table_data +='</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>';  */
+	$("#myTable tbody").prepend(table_data);      
+	/* count=count+1; */   
    }
-   ++count;
+   
   });
  },5000);
 });
@@ -256,9 +256,9 @@ if (strpos($cells[8], "Critical")!==false){
 		for($k=0;$k<count($cells)-1;$k++)
 		{
 		  if($k!=1 && $k!=8) 
-		  echo "<td style='text-align:center';>".$cells[$k]."</td>";
+		  echo "<td style='text-align:center'; class='".$cells[3]."'> ".$cells[$k]."</td>";
 		  if($k==8) {
-		  echo "<td bgcolor='".$cells[1]."' style=color:white;>".$cells[$k]."</td>";
+		  echo "<td bgcolor='".$cells[1]."' class='".$cells[3]."'>".$cells[$k]."</td>";
 		 	if (strpos($cells[$k], "Critical")!==false) 
 				  echo '<td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal'.$i.'">View</button>
 				  </td>';
@@ -447,9 +447,7 @@ array_push($d,$subarray);
 array_shift($d);
 ?>  
 <script>
- window.onload = function() {
-	
- 
+ window.onload = function() { 
 	CanvasJS.addColorSet("greenShades",
                 [//colorSet Array
 
@@ -474,7 +472,6 @@ array_shift($d);
      }]
  });
  chart.render();
-
  var myPieChart = new CanvasJS.Chart("chartContainer2", {
 	colorSet: "greenShades",
 	animationEnabled: true,
@@ -549,6 +546,7 @@ array_shift($d);
 }
  </script>
  
+
       
 	  <div class="row wow fadeIn">
 
@@ -556,13 +554,12 @@ array_shift($d);
 	
 				<div class="card-header " >
 		<h3 class="card-title" style="font-family:Arial;">Frequency of alarms</h3></div>
-		<div class="table-responsive-sm table table-hover">
+		<div class="table-responsive-sm table table-hover" id="freq1">
 			<table class="scrolldown">
 				<thead style="border-color :#5aa7a7;">
 				  <tr>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;" >Reason for alarm</th>
-					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Frequency</th>
-					        
+					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Frequency</th>  
 				  </tr>
 				</thead>
 	<tbody>
@@ -605,7 +602,7 @@ array_shift($d);
 	
 				<div class="card-header " >
 		<h3 class="card-title" style="font-family:Arial;">Classification of alarms</h3></div>
-		<div class="table-responsive-sm table table-hover">
+		<div class="table-responsive-sm table table-hover" id="freq2">
 			<table class="scrolldown">
 				<thead style="border-color :#5aa7a7;">
 				  <tr>
