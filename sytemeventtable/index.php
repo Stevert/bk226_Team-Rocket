@@ -104,7 +104,7 @@
 	
 }</style>
 
-
+<?php session_start(); ?>
 
 
 <script>
@@ -160,7 +160,7 @@ table_data +='</div><div class="modal-footer"><button type="button" class="btn b
   <a href="mitigation.php">Mitigation</a>
   <a href="report.php">Reports</a>
 	<a href="logout.php">Logout</a>
-	<p><?php session_start(); echo $_SESSION['name'].', '. $_SESSION['des'];?></p>
+	<p><?php echo $_SESSION['name'].', '. $_SESSION['des'];?></p>
 </div>
 
 <script>
@@ -229,15 +229,12 @@ if (strpos($cells[8], "Critical")!==false){
 	<div class="container">
 	<div class="card-header " >
 		<h3 class="card-title" style="font-family:Arial;">Real Time Alarms</h3></div>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		<div class="table-responsive-sm table table-hover" id="myTable">
-=======
 		<div class="table-responsive-sm table table-hover" id="copy">
->>>>>>> e60c840737268897ab6662c2836a903b97ace674
-=======
+
 		<div class="table-responsive-sm table table-hover" id="copy">
->>>>>>> e60c840737268897ab6662c2836a903b97ace674
+
 			<table class="scrolldown">
 				<thead style="border-color :#5aa7a7;">
 				  <tr>
@@ -249,7 +246,6 @@ if (strpos($cells[8], "Critical")!==false){
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Range</th>
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm occurrence</th> 
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Alarm type</th>
-					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;">Location</th> 
 					<th style="text-align:center;background-color:rgb(0, 0, 0,0.5);color:white;"> Action needed</th>           
 				  </tr>
 				</thead>
