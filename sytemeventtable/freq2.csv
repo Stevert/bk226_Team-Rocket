@@ -1,3 +1,5 @@
 Type,Count
-Critical (Corelated),180
-Alert,8
+Critical (Corelated),627
+Alert,395
+Alert (correlated),142
+Critical,46
