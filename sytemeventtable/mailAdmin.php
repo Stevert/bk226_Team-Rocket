@@ -33,12 +33,34 @@ $mail->From = "chinukkinage@gmail.com";
 $mail->FromName = "Alarm management system";
 $mail->addAddress($email,"User 1");
 
+$f = fopen("copy.csv", "r");
+
+$fr = fread($f, filesize("copy.csv"));
+fclose($f);
+$lines = array();
+$lines = explode("\n",$fr); // IMPORTANT the delimiter here just the "new line" \r\n, use what u need instead of...
+$cells = array();
+$len= count($lines)-2;
+$cells = explode(",",$lines[$len]);
+
+
+$output = '<html><body>';
+$output .=  '<table border="1"><tr><th>Timestamp</th><th>Component</th><th>Reason for alarm</th><th>Nature</th><th>Senor type</th><th>Range</th><th>Alarm occurrence</th><th>Alarm type</th><th>Action needed</th></tr>';
+$output .= '<tr>';
+for($k=0;$k<count($cells)-1;$k++)
+		{
+		$output .= '<td>'.$cells[$k].'</td>'; }
+		
+$output .= '</tr></table></body></html>';
 //$mail->addCC("user.3@ymail.com","User 3");
 //$mail->addBCC("user.4@in.com","User 4");
 
+
 $mail->Subject = "Critical alert!";
 $mail->Body = 
-"Hi ,<br/><br/> Critical alert generated due to '.$cause.'<br/>";
+"Hi ,<br/><br/> Critical alert generated due to '.$cause.'<br/>
+'.$output.'
+";
 
 if(!$mail->Send())
     echo "Message was not sent <br />PHPMailer Error: " . $mail->ErrorInfo;
